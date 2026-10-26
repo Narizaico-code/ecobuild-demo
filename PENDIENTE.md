@@ -1,5 +1,15 @@
 # Pendiente (demo de la conferencia, martes 2026-10-27)
 
+## Actualización 2026-10-26 (diseño del HTML de referencia)
+- Base visual: el CSS del HTML `EcoBuild-demo(frontend un poco retocado creo).html` (tema «Eucalipto»), en `src/base-anterior.css` (compilado: no se edita a mano).
+- Nuevo: **Inicio** (`/app/inicio`, adonde lleva el login) con «¿Qué quieres hacer hoy?» y el dibujo por etapas; login a pantalla completa; sidebar que se oculta (« y ☰) con las vistas de la casa como subetiquetas de «Mis obras»; Mis obras en tarjetas con «Nueva obra» (abre la vista de 8 pasos del EcoBuild anterior); Necesidades y Alternativas de la casa.
+- Un solo recorrido de 8 pasos: Mi obra, Necesidades, Alternativas, Cotizaciones, Órdenes, Facturas, Presupuesto, Resumen (`src/lib/recorrido.ts`).
+- Arreglado: pantallas desvanecidas tras el login (la animación de entrada ya no usa opacidad).
+- Probado 2026-10-26 con `pnpm build` + `pnpm preview`: las 26 rutas abren con título y migas; aceptar cotización → orden; ordenar y confirmar facturas; varilla reciclada → CO₂e evitable en el Resumen. La impresión del reporte no se probó (solo están las reglas de `@media print`).
+- **Prueba manual para el humano (no la hizo el agente, para no cortar el control remoto):** en el portátil de la conferencia, `pnpm build`, apagar el wifi, `pnpm preview` y recorrer la demo. También imprimir el reporte (Ctrl+P) y revisar que salga sin sidebar.
+- No se incluyó el selector de temas del HTML (Eucalipto, Laguna, Lavanda, Plano): queda fijo Eucalipto.
+- La vista de 8 pasos de las obras nuevas es la del anterior tal cual (Mis necesidades, Proveedores, Decisión, Expediente, Impacto); sus nombres no son idénticos a los de la casa.
+
 Estado (2026-10-25, rediseño): la demo usa el diseño del EcoBuild anterior (`..\Sexto\EcoBuild`: shell con sidebar, Syne + Fraunces + Figtree, colores, componentes) y une su catálogo y comparador con el recorrido nuevo de la casa modelo.
 `pnpm build` + `pnpm preview` funcionan; en el registro de red de la compilación de producción **todas** las peticiones van a localhost (fuentes, texturas e imágenes dentro del proyecto). **No se probó con el cable/wifi cortado de verdad**: hacerlo en el ensayo.
 

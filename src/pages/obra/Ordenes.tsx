@@ -24,7 +24,7 @@ function OrdenPanel({ o }: { o: Orden }) {
       <Metricas>
         <Kpi label="Total ordenado" value={Q(o.total)} sub={`${o.oferta.pago} · entrega ${o.oferta.entrega}`} />
         <Kpi label="Ya facturado" value={Q(o.facturado)} sub={facturasNum.length ? `en ${facturasNum.join(", ")}` : "ninguna factura confirmada"} />
-        <Kpi label="Por facturar" value={Q(Math.max(0, o.total - o.facturado))} />
+        <Kpi label="Por facturar" value={Q(o.porFacturar)} sub="sin contar el flete; es lo comprometido en el presupuesto" />
         <Kpi
           label={o.ahorro >= 0 ? "Ahorro contra la otra oferta" : "Sobrecosto contra la otra oferta"}
           value={Q(Math.abs(o.ahorro))}

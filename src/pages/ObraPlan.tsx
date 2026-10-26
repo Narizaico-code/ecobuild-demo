@@ -331,10 +331,9 @@ function NecesidadesObra({
         Qué hay que comprar en esta <span className="italic">ventana</span>
       </h2>
       <p className="lede" style={{ maxWidth: "40rem" }}>
-        La etapa no se mide sola: en el caso demo es la compra de estructura, a
-        14 días. Los tres renglones de Bosques son la semilla del tour; abajo
-        se puede agregar del catálogo. Demostración: no se envía a ningún
-        proveedor.
+        Lo que la obra necesita comprar en esta etapa. Se agrega del catálogo
+        con su cantidad; de aquí salen las alternativas y las cotizaciones.
+        Demostración: no se envía a ningún proveedor.
       </p>
       {renglones.length === 0 ? (
         <p className="empty">Todavía no hay renglones en esta obra.</p>
