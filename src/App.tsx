@@ -18,7 +18,7 @@ import { Casa, MisObras, Proyecto } from "./pages/obra/Obras";
 import { Cotizaciones } from "./pages/obra/Cotizaciones";
 import { Ordenes } from "./pages/obra/Ordenes";
 import { Presupuesto } from "./pages/obra/Presupuesto";
-import Facturas from "./pages/casa/Facturas";
+import { Facturas } from "./pages/obra/Facturas";
 import Resumen from "./pages/casa/Resumen";
 import Carbono from "./pages/casa/Carbono";
 import Reporte from "./pages/casa/Reporte";

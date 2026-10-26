@@ -153,3 +153,23 @@ fieldset { border: 0; }
 fieldset legend { margin-bottom: 0.5rem; }
 button.link-cruzado { text-align: left; }
 .btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+/* El Excel tal como llega: a propósito se ve como hoja de cálculo */
+.mono { font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; }
+.excel { border-collapse: collapse; min-width: 820px; width: 100%; background: #fff; font-family: ui-monospace, "Cascadia Mono", Consolas, monospace; font-size: 12px; }
+.excel th { background: #e8e4da; text-align: left; font-weight: 600; }
+.excel th, .excel td { border: 1px solid rgba(26, 23, 18, 0.15); padding: 0.3rem 0.5rem; }
+.excel td.sucio { background: rgba(194, 78, 29, 0.14); color: var(--cinder); font-weight: 600; }
+.tachado { color: var(--stone); text-decoration: line-through; text-decoration-color: rgba(194, 78, 29, 0.5); font-size: 0.8rem; }
+.fila-ok td { background: rgba(197, 212, 90, 0.16); }
+.conf-alta { color: var(--olive); }
+.conf-ninguna { color: var(--cinder); }
+.ordenando { list-style: none; display: grid; gap: 0.6rem; font-size: 1.05rem; }
+.ordenando li { opacity: 0.35; transition: opacity 0.3s ease; }
+.ordenando li.is-now { opacity: 0.75; }
+.ordenando li.is-done { opacity: 1; color: var(--olive); font-weight: 600; }
+details.fold > summary { cursor: pointer; }
+.tabla-emparejar { min-width: 860px; font-size: 0.86rem; }
+.tabla-emparejar td, .tabla-emparejar th { padding: 0.6rem 0.7rem; }
+.tabla-emparejar .select-input { width: 100%; min-width: 150px; }
+.tabla-emparejar .btn { padding: 0.7rem 0.9rem; }
