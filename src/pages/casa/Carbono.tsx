@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import { btnSecundario, Card, Etiqueta, Kpi, Titulo } from "../components/ui";
-import { FACTORES } from "../data/factores";
-import { MAT, type Linea } from "../data/obra";
-import { huellaLinea, kg, kgPorUnidad, pct, Q, resumen } from "../lib/calc";
-import { useDemo } from "../lib/store";
+import { btnSecundario, Card, Etiqueta, Kpi, Titulo } from "./ui";
+import { FACTORES } from "../../data/factores";
+import { MAT, type Linea } from "../../data/obra";
+import { huellaLinea, kg, kgPorUnidad, pct, Q, resumen } from "../../lib/calc";
+import { useDemo } from "../../lib/store";
 
 function agrupar(lineas: Linea[]) {
   const g = new Map<string, { cant: number; gasto: number; unidad: string }>();
@@ -136,7 +136,7 @@ export default function Carbono() {
 
       <h2 className="mb-3 mt-10 font-display text-xl font-bold">Alternativas, con comparación honesta</h2>
       <Alternativas />
-      <p className="mt-6 text-sm"><Link to="/casa/reporte" className="font-semibold text-moss underline">Generar el reporte «Materiales y carbono» →</Link></p>
+      <p className="mt-6 text-sm"><Link to="/app/reporte" className="font-semibold text-moss underline">Generar el reporte «Materiales y carbono» →</Link></p>
     </>
   );
 }

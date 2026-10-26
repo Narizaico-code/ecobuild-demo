@@ -8,20 +8,28 @@ interface Estado {
   decisiones: Record<string, Decision>;
   noDup: string[]; // duplicadas que la persona dijo "no es duplicado"
   conv: Record<string, number>; // material -> kg por unidad (o kg/m³)
+  aceptadas: Record<string, string>; // cotización -> proveedor elegido (de ahí sale la orden)
+  solicitudes: Solicitud[]; // pedidos de cotización enviados en la demo
+  reciclada: boolean; // la persona decidió pedir varilla con contenido reciclado
 }
+
+export interface Solicitud { id: string; mats: string[]; provs: string[] }
 
 const inicial = (): Estado => ({
   ordenado: false,
   decisiones: Object.fromEntries(LINEAS_A_EMPAREJAR.map((l) => [l.id, { mat: l.mat, cap: l.cap, ok: false }])),
   noDup: [],
   conv: { concreto: 2400 }, // ya declarado por el equipo antes de la demo
+  aceptadas: {},
+  solicitudes: [],
+  reciclada: false,
 });
 
-const KEY = "ecobuild-demo-v1";
+const KEY = "ecobuild-demo-v2";
 const cargar = (): Estado => {
   try {
     const s = localStorage.getItem(KEY);
-    if (s) return JSON.parse(s);
+    if (s) return { ...inicial(), ...JSON.parse(s) };
   } catch { /* sin almacenamiento: arranca limpio */ }
   return inicial();
 };
@@ -34,6 +42,9 @@ interface Ctx extends Estado {
   confirmarAltas: () => void;
   alternarDup: (id: string) => void;
   setConv: (mat: string, kg: number | null) => void;
+  aceptar: (cot: string, prov: string | null) => void;
+  solicitar: (mats: string[], provs: string[]) => void;
+  setReciclada: (v: boolean) => void;
   reiniciar: () => void;
 }
 const C = createContext<Ctx>(null as never);
@@ -71,6 +82,15 @@ export function DemoProvider({ children }: { children: ReactNode }) {
           if (kg === null || !(kg > 0)) delete conv[mat]; else conv[mat] = kg;
           return { ...s, conv };
         }),
+      aceptar: (cot, prov) =>
+        setE((s) => {
+          const aceptadas = { ...s.aceptadas };
+          if (prov) aceptadas[cot] = prov; else delete aceptadas[cot];
+          return { ...s, aceptadas };
+        }),
+      solicitar: (mats, provs) =>
+        setE((s) => ({ ...s, solicitudes: [...s.solicitudes, { id: `SC-${String(s.solicitudes.length + 1).padStart(3, "0")}`, mats, provs }] })),
+      setReciclada: (v) => setE((s) => ({ ...s, reciclada: v })),
       reiniciar: () => setE(inicial()),
     };
   }, [e]);

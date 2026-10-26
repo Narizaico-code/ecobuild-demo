@@ -1,0 +1,149 @@
+/* Piezas nuevas de la demo de octubre, en el lenguaje del EcoBuild anterior:
+   esquinas rectas, líneas finas, rótulos en versalitas. */
+
+.panel {
+  border: 1px solid var(--line);
+  background: var(--bone);
+  margin-bottom: 1.6rem;
+}
+.panel-body {
+  padding: 1.1rem 1.4rem;
+}
+.panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
+  padding: 1.1rem 1.4rem 0.9rem;
+  border-bottom: 1px solid var(--line);
+}
+.panel-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin: 2.2rem 0 0.9rem;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.28rem 0.5rem;
+  border: 1px solid var(--line);
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.tag-estimado { background: rgba(197, 212, 90, 0.45); border-color: rgba(160, 175, 60, 0.9); }
+.tag-declarado { background: var(--mist); }
+.tag-verificado { background: var(--olive); color: var(--linen); border-color: var(--olive); }
+.tag-sindato { background: transparent; color: var(--stone); border-style: dashed; border-color: var(--stone); }
+.tag-nocomp { background: rgba(194, 78, 29, 0.08); color: var(--cinder); border-color: rgba(194, 78, 29, 0.45); }
+
+.metric-sub {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.78rem;
+  color: var(--stone);
+  line-height: 1.4;
+}
+.metric-moss b { color: var(--olive); }
+.metric-brick b { color: var(--cinder); }
+
+.barra { display: flex; height: 6px; background: var(--mist); overflow: hidden; }
+.barra-ok { background: var(--olive); }
+.barra-over { background: var(--cinder); }
+.barra-comp { background: repeating-linear-gradient(45deg, var(--olive) 0 3px, transparent 3px 6px); opacity: 0.55; }
+
+.aviso {
+  display: block;
+  padding: 0.95rem 1.2rem;
+  margin-bottom: 1.6rem;
+  border: 1px solid;
+  line-height: 1.5;
+}
+.aviso-brick { border-color: rgba(194, 78, 29, 0.45); background: rgba(194, 78, 29, 0.07); }
+.aviso-moss { border-color: rgba(30, 92, 58, 0.35); background: rgba(30, 92, 58, 0.07); }
+a.aviso:hover { filter: brightness(0.97); }
+
+.tabla { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.tabla th {
+  text-align: left;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--stone);
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--line);
+}
+.tabla td { padding: 0.7rem 1rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+.tabla tr:last-child td { border-bottom: 0; }
+.tabla .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.tabla th.num { text-align: right; }
+.tabla .fila-total td { background: var(--linen); font-weight: 600; }
+.tabla .mejor { color: var(--olive); font-weight: 700; }
+.table-wrap { overflow-x: auto; }
+
+.link-cruzado {
+  color: var(--olive);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+}
+.link-cruzado:hover { color: var(--olive-deep); }
+.nota { font-size: 0.8rem; color: var(--stone); line-height: 1.5; }
+
+/* Migas de pan en la barra superior */
+.crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 0.45rem; font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--stone); }
+.crumbs a:hover { color: var(--ink); text-decoration: underline; }
+.crumbs [aria-current] { color: var(--ink); font-weight: 600; }
+.crumbs .sep { opacity: 0.5; }
+
+/* Paso hecho y contador en el recorrido de la obra */
+.obra-step.is-done .obra-step-n::after { content: " ✓"; color: var(--olive); font-weight: 700; }
+.obra-step-badge { display: inline-block; margin-left: 0.3rem; padding: 0 0.35rem; background: var(--cinder); color: var(--bone); font-size: 0.6rem; vertical-align: middle; font-family: var(--font-sans); }
+
+.demo-badge { font-size: 0.58rem; letter-spacing: 0.16em; text-transform: uppercase; border: 1px solid var(--line); padding: 0.3rem 0.55rem; color: var(--stone); white-space: nowrap; }
+
+/* Lotes de la lotificación */
+.lotes { display: grid; grid-template-columns: repeat(auto-fill, minmax(6.5rem, 1fr)); gap: 0.6rem; padding: 1.1rem 1.4rem; }
+.lote { border: 1px solid var(--line); background: var(--linen); padding: 0.8rem; min-height: 5.4rem; display: flex; flex-direction: column; justify-content: space-between; }
+.lote b { font-family: var(--font-display); font-size: 1.1rem; }
+.lote small { font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--stone); }
+.lote.is-casa { background: var(--olive); color: var(--linen); border-color: var(--olive); }
+.lote.is-casa small { color: rgba(239, 232, 216, 0.8); }
+a.lote.is-casa:hover { background: var(--olive-deep); }
+.lote.is-diseno { border-style: dashed; background: var(--bone); }
+
+/* Siguiente paso: la acción principal de la vista */
+.siguiente { display: flex; justify-content: space-between; align-items: center; gap: 1.2rem; padding: 1.3rem 1.5rem; background: var(--ink); color: var(--linen); margin-bottom: 1.6rem; }
+.siguiente .eyebrow { color: rgba(239, 232, 216, 0.6); }
+.siguiente h2 { font-family: var(--font-display); font-size: 1.35rem; margin-top: 0.3rem; }
+.siguiente p { color: rgba(239, 232, 216, 0.75); font-size: 0.9rem; margin-top: 0.35rem; max-width: 40rem; line-height: 1.5; }
+
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); gap: 1.2rem; }
+.grid-2 > .panel { margin-bottom: 0; }
+
+.preview-banner { display: flex; gap: 1rem; justify-content: space-between; align-items: center; padding: 1rem 1.3rem; margin-bottom: 1.8rem; border: 1px dashed var(--olive); background: rgba(30, 92, 58, 0.06); }
+.preview-banner p { max-width: 52rem; line-height: 1.5; }
+
+input.num-input { width: 7rem; padding: 0.45rem 0.6rem; border: 1px solid var(--line); background: #fff; }
+select.select-input { padding: 0.45rem 0.6rem; border: 1px solid var(--line); background: #fff; max-width: 100%; }
+
+@media print {
+  .app-sidebar, .app-topbar, .obra-stepper, .no-print, .toast, .compare-tray { display: none !important; }
+  .app-shell--sidebar { display: block !important; }
+  .app-main { padding: 0 !important; }
+  body { background: #fff; }
+  @page { margin: 14mm; }
+}
+
+.obra-step a.is-current-link { box-shadow: inset 0 -3px 0 var(--olive); background: var(--linen); }

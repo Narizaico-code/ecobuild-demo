@@ -1,0 +1,517 @@
+[
+  {
+    "id": "lic-001",
+    "titulo": "Conjunto de vivienda social resiliente — Mixco (120 unidades)",
+    "inversionistaId": "inv-01",
+    "inversionistaNombre": "Fundación Hábitat Altiplano",
+    "materiales": [
+      {
+        "materialId": "mat-028",
+        "cantidad": 48000,
+        "unidad": "pieza"
+      },
+      {
+        "materialId": "mat-006",
+        "cantidad": 2400,
+        "unidad": "bolsa 50 lb"
+      },
+      {
+        "materialId": "mat-052",
+        "cantidad": 85,
+        "unidad": "m³"
+      },
+      {
+        "materialId": "mat-040",
+        "cantidad": 120,
+        "unidad": "sistema"
+      }
+    ],
+    "presupuesto": 18500000,
+    "moneda": "GTQ",
+    "requerimientos": "Muros BTC o adobe estabilizado con cal local, madera FSC en estructura de cubierta, y cosecha de lluvia por vivienda. Prohibido block de concreto como sistema principal. Fichas EPD o GGBC piloto.",
+    "ubicacion": {
+      "ciudad": "Mixco",
+      "departamento": "Guatemala",
+      "lat": 14.6333,
+      "lng": -90.6064
+    },
+    "estado": "abierta",
+    "fechaCierre": "2026-09-30",
+    "ofertas": [
+      {
+        "proveedorId": "prov-nacional-01",
+        "materialesOfrecidos": [
+          "mat-006",
+          "mat-028",
+          "mat-052"
+        ],
+        "mensaje": "Horcalsa + predios FSC AgroProgreso. Entrega cal semanal a Mixco.",
+        "fecha": "2026-08-08"
+      },
+      {
+        "proveedorId": "prov-nacional-10",
+        "materialesOfrecidos": [
+          "mat-040",
+          "mat-039"
+        ],
+        "mensaje": "Paquete cisterna 1,100 L + first flush por lote.",
+        "fecha": "2026-08-10"
+      }
+    ]
+  },
+  {
+    "id": "lic-002",
+    "titulo": "Hotel boutique de baja huella — Antigua Guatemala",
+    "inversionistaId": "inv-02",
+    "inversionistaNombre": "Grupo Piedra Santa Hospitality",
+    "materiales": [
+      {
+        "materialId": "mat-053",
+        "cantidad": 42,
+        "unidad": "m³"
+      },
+      {
+        "materialId": "mat-056",
+        "cantidad": 1800,
+        "unidad": "m² (50 mm)"
+      },
+      {
+        "materialId": "mat-062",
+        "cantidad": 920,
+        "unidad": "m²"
+      },
+      {
+        "materialId": "mat-050",
+        "cantidad": 640,
+        "unidad": "L"
+      },
+      {
+        "materialId": "mat-066",
+        "cantidad": 1100,
+        "unidad": "m²"
+      }
+    ],
+    "presupuesto": 9200000,
+    "moneda": "GTQ",
+    "requerimientos": "Estructura visible de bambú laminado, aislamiento sin formaldehído, piso linóleo o Interface, pintura mineral y teja de arcilla. Meta LEED Gold / GGBC.",
+    "ubicacion": {
+      "ciudad": "Antigua Guatemala",
+      "departamento": "Sacatepéquez",
+      "lat": 14.5611,
+      "lng": -90.7344
+    },
+    "estado": "en_revision",
+    "fechaCierre": "2026-08-22",
+    "ofertas": [
+      {
+        "proveedorId": "prov-internacional-04",
+        "materialesOfrecidos": [
+          "mat-062"
+        ],
+        "mensaje": "Marmoleum Cocoa para habitaciones y circulaciones. Lead time 6 semanas a Puerto Quetzal.",
+        "fecha": "2026-08-01"
+      },
+      {
+        "proveedorId": "prov-internacional-02",
+        "materialesOfrecidos": [
+          "mat-056"
+        ],
+        "mensaje": "Knauf ECOSE para entrepisos y cubierta. Declaración Eurofins Gold.",
+        "fecha": "2026-08-03"
+      },
+      {
+        "proveedorId": "prov-internacional-09",
+        "materialesOfrecidos": [
+          "mat-066"
+        ],
+        "mensaje": "Teja cerámica con EPD para cubierta inclinada colonial.",
+        "fecha": "2026-08-05"
+      }
+    ]
+  },
+  {
+    "id": "lic-003",
+    "titulo": "Escuela urbana de energía neta cero — Zona 10",
+    "inversionistaId": "inv-03",
+    "inversionistaNombre": "MINEDUC · Unidad de Infraestructura Educativa",
+    "materiales": [
+      {
+        "materialId": "mat-005",
+        "cantidad": 4200,
+        "unidad": "saco 42,5 kg"
+      },
+      {
+        "materialId": "mat-011",
+        "cantidad": 860,
+        "unidad": "m³"
+      },
+      {
+        "materialId": "mat-022",
+        "cantidad": 95,
+        "unidad": "t"
+      },
+      {
+        "materialId": "mat-068",
+        "cantidad": 220,
+        "unidad": "módulo"
+      },
+      {
+        "materialId": "mat-071",
+        "cantidad": 480,
+        "unidad": "m²"
+      },
+      {
+        "materialId": "mat-057",
+        "cantidad": 2100,
+        "unidad": "m² (50 mm)"
+      }
+    ],
+    "presupuesto": 24500000,
+    "moneda": "GTQ",
+    "requerimientos": "Cemento/concreto de baja huella con EPD, acero EAF, envolvente ROCKWOOL o Knauf, DVH low-e y FV 550 W. Informe de huella de obra.",
+    "ubicacion": {
+      "ciudad": "Ciudad de Guatemala",
+      "departamento": "Guatemala",
+      "lat": 14.6089,
+      "lng": -90.5133
+    },
+    "estado": "abierta",
+    "fechaCierre": "2026-10-15",
+    "ofertas": [
+      {
+        "proveedorId": "prov-internacional-05",
+        "materialesOfrecidos": [
+          "mat-005",
+          "mat-011"
+        ],
+        "mensaje": "Vertua para zapatas y losas. EPD disponible.",
+        "fecha": "2026-08-12"
+      },
+      {
+        "proveedorId": "prov-nacional-06",
+        "materialesOfrecidos": [
+          "mat-022"
+        ],
+        "mensaje": "Montaje de pórticos con placa EAF importada y taller zona 14.",
+        "fecha": "2026-08-13"
+      }
+    ]
+  },
+  {
+    "id": "lic-004",
+    "titulo": "Rehabilitación de mercado municipal — Quetzaltenango",
+    "inversionistaId": "inv-04",
+    "inversionistaNombre": "Municipalidad de Quetzaltenango",
+    "materiales": [
+      {
+        "materialId": "mat-024",
+        "cantidad": 85,
+        "unidad": "millar"
+      },
+      {
+        "materialId": "mat-008",
+        "cantidad": 420,
+        "unidad": "m³"
+      },
+      {
+        "materialId": "mat-065",
+        "cantidad": 6400,
+        "unidad": "pie lineal"
+      },
+      {
+        "materialId": "mat-017",
+        "cantidad": 320,
+        "unidad": "quintal"
+      },
+      {
+        "materialId": "mat-042",
+        "cantidad": 1800,
+        "unidad": "m²"
+      }
+    ],
+    "presupuesto": 7800000,
+    "moneda": "GTQ",
+    "requerimientos": "Especificación convencional de canasta INE para plazos cortos. Se valora alternativa de porcelanato Samboro y concreto Mixto Listo puesto en Xela.",
+    "ubicacion": {
+      "ciudad": "Quetzaltenango",
+      "departamento": "Quetzaltenango",
+      "lat": 14.8347,
+      "lng": -91.518
+    },
+    "estado": "adjudicada",
+    "fechaCierre": "2026-07-15",
+    "ofertas": [
+      {
+        "proveedorId": "prov-nacional-05",
+        "materialesOfrecidos": [
+          "mat-024",
+          "mat-023"
+        ],
+        "mensaje": "Block 15×20×40 con flete a Xela incluido.",
+        "fecha": "2026-06-20"
+      },
+      {
+        "proveedorId": "prov-nacional-08",
+        "materialesOfrecidos": [
+          "mat-042",
+          "mat-043"
+        ],
+        "mensaje": "Cerámica 33×33 y porcelanato de recambio. Adjudicada en pisos.",
+        "fecha": "2026-06-22"
+      },
+      {
+        "proveedorId": "prov-nacional-03",
+        "materialesOfrecidos": [
+          "mat-008"
+        ],
+        "mensaje": "3,500 PSI con planta de apoyo en occidente.",
+        "fecha": "2026-06-18"
+      }
+    ]
+  },
+  {
+    "id": "lic-005",
+    "titulo": "Nave logística con piso industrial — Escuintla",
+    "inversionistaId": "inv-05",
+    "inversionistaNombre": "Pacific Logistics Park, S. A.",
+    "materiales": [
+      {
+        "materialId": "mat-010",
+        "cantidad": 2400,
+        "unidad": "m³"
+      },
+      {
+        "materialId": "mat-058",
+        "cantidad": 8600,
+        "unidad": "m²"
+      },
+      {
+        "materialId": "mat-022",
+        "cantidad": 180,
+        "unidad": "t"
+      },
+      {
+        "materialId": "mat-068",
+        "cantidad": 400,
+        "unidad": "módulo"
+      }
+    ],
+    "presupuesto": 31200000,
+    "moneda": "GTQ",
+    "requerimientos": "Losa 5,000 PSI, paneles QuadCore, acero reciclado EAF y cubiertas FV. Certificación EDGE o equivalente.",
+    "ubicacion": {
+      "ciudad": "Escuintla",
+      "departamento": "Escuintla",
+      "lat": 14.305,
+      "lng": -90.785
+    },
+    "estado": "abierta",
+    "fechaCierre": "2026-09-12",
+    "ofertas": [
+      {
+        "proveedorId": "prov-internacional-06",
+        "materialesOfrecidos": [
+          "mat-058"
+        ],
+        "mensaje": "QuadCore Optimo con EPD de planta. Entrega vía Puerto Quetzal.",
+        "fecha": "2026-08-11"
+      },
+      {
+        "proveedorId": "prov-nacional-03",
+        "materialesOfrecidos": [
+          "mat-010"
+        ],
+        "mensaje": "Mix 5,000 PSI con control de revenimiento para losa de 18,000 m².",
+        "fecha": "2026-08-09"
+      }
+    ]
+  },
+  {
+    "id": "lic-006",
+    "titulo": "Red de agua lluvia y saneamiento rural — San Benito, Petén",
+    "inversionistaId": "inv-06",
+    "inversionistaNombre": "Mancomunidad Petén Itzá",
+    "materiales": [
+      {
+        "materialId": "mat-040",
+        "cantidad": 85,
+        "unidad": "sistema"
+      },
+      {
+        "materialId": "mat-041",
+        "cantidad": 85,
+        "unidad": "unidad"
+      },
+      {
+        "materialId": "mat-038",
+        "cantidad": 12000,
+        "unidad": "m"
+      },
+      {
+        "materialId": "mat-039",
+        "cantidad": 40,
+        "unidad": "unidad"
+      }
+    ],
+    "presupuesto": 4100000,
+    "moneda": "GTQ",
+    "requerimientos": "Captación pluvial + biodigestor por vivienda y red PEAD. Capacitación a fontaneros comunitarios. NSF en contacto con agua.",
+    "ubicacion": {
+      "ciudad": "San Benito",
+      "departamento": "Petén",
+      "lat": 16.9167,
+      "lng": -89.9
+    },
+    "estado": "abierta",
+    "fechaCierre": "2026-11-05",
+    "ofertas": [
+      {
+        "proveedorId": "prov-nacional-10",
+        "materialesOfrecidos": [
+          "mat-040",
+          "mat-041",
+          "mat-039"
+        ],
+        "mensaje": "Lote de tinacos y biodigestores con capacitación in situ.",
+        "fecha": "2026-08-07"
+      },
+      {
+        "proveedorId": "prov-nacional-07",
+        "materialesOfrecidos": [
+          "mat-038",
+          "mat-035"
+        ],
+        "mensaje": "PEAD PE100 fusión a tope y ramales PVC.",
+        "fecha": "2026-08-08"
+      }
+    ]
+  },
+  {
+    "id": "lic-007",
+    "titulo": "Retrofit de oficinas LEED — Cayalá",
+    "inversionistaId": "inv-07",
+    "inversionistaNombre": "Inmobiliaria Bosques de Cayalá",
+    "materiales": [
+      {
+        "materialId": "mat-061",
+        "cantidad": 2400,
+        "unidad": "m²"
+      },
+      {
+        "materialId": "mat-063",
+        "cantidad": 600,
+        "unidad": "m²"
+      },
+      {
+        "materialId": "mat-050",
+        "cantidad": 900,
+        "unidad": "L"
+      },
+      {
+        "materialId": "mat-056",
+        "cantidad": 1500,
+        "unidad": "m² (50 mm)"
+      },
+      {
+        "materialId": "mat-069",
+        "cantidad": 320,
+        "unidad": "unidad"
+      }
+    ],
+    "presupuesto": 5600000,
+    "moneda": "GTQ",
+    "requerimientos": "Interior fit-out: Interface o Marmoleum, pintura mineral, aislamiento ECOSE y LED. Declaraciones C2C/EPD obligatorias.",
+    "ubicacion": {
+      "ciudad": "Ciudad de Guatemala",
+      "departamento": "Guatemala",
+      "lat": 14.6105,
+      "lng": -90.4789
+    },
+    "estado": "en_revision",
+    "fechaCierre": "2026-08-28",
+    "ofertas": [
+      {
+        "proveedorId": "prov-internacional-03",
+        "materialesOfrecidos": [
+          "mat-061"
+        ],
+        "mensaje": "Loseta carbon negative + ReEntry del piso existente.",
+        "fecha": "2026-08-04"
+      },
+      {
+        "proveedorId": "prov-internacional-01",
+        "materialesOfrecidos": [
+          "mat-050",
+          "mat-056"
+        ],
+        "mensaje": "Weber mineral + Isover. Fichas LEED v4.1.",
+        "fecha": "2026-08-06"
+      }
+    ]
+  },
+  {
+    "id": "lic-008",
+    "titulo": "Centro de formación en bambú y tierra — Cobán",
+    "inversionistaId": "inv-08",
+    "inversionistaNombre": "MAGA · Programa Bambú Guatemala–Taiwán",
+    "materiales": [
+      {
+        "materialId": "mat-053",
+        "cantidad": 28,
+        "unidad": "m³"
+      },
+      {
+        "materialId": "mat-028",
+        "cantidad": 12000,
+        "unidad": "pieza"
+      },
+      {
+        "materialId": "mat-060",
+        "cantidad": 40,
+        "unidad": "m³"
+      },
+      {
+        "materialId": "mat-059",
+        "cantidad": 700,
+        "unidad": "m² (50 mm)"
+      },
+      {
+        "materialId": "mat-052",
+        "cantidad": 18,
+        "unidad": "m³"
+      }
+    ],
+    "presupuesto": 3400000,
+    "moneda": "GTQ",
+    "requerimientos": "Demostrador de guadua laminada, BTC, hempcrete y HempWool. Taller abierto a maestros de obra. Prioridad a cadena local de Alta Verapaz.",
+    "ubicacion": {
+      "ciudad": "Cobán",
+      "departamento": "Alta Verapaz",
+      "lat": 15.4708,
+      "lng": -90.3723
+    },
+    "estado": "abierta",
+    "fechaCierre": "2026-10-01",
+    "ofertas": [
+      {
+        "proveedorId": "prov-internacional-10",
+        "materialesOfrecidos": [
+          "mat-059",
+          "mat-060"
+        ],
+        "mensaje": "HempWool + hempcrete con asistencia técnica de colocación.",
+        "fecha": "2026-08-14"
+      },
+      {
+        "proveedorId": "prov-nacional-01",
+        "materialesOfrecidos": [
+          "mat-052",
+          "mat-028",
+          "mat-006"
+        ],
+        "mensaje": "Cal + BTC y pino FSC de fincas propias.",
+        "fecha": "2026-08-14"
+      }
+    ]
+  }
+]

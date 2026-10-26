@@ -2,7 +2,8 @@
 // Las cotizaciones reales casi nunca traen vigencia, forma de pago clara ni IVA: EcoBuild las exige.
 // Los valores de vigencia, pago, anticipo y flete son ilustrativos (la papelería no los trae).
 
-export interface Renglon { material: string; unidad: string; cant: number; pu: Record<string, number> }
+// mat y cap enlazan el renglón con el material de la obra y su capítulo del presupuesto.
+export interface Renglon { material: string; mat: string; cap: number; unidad: string; cant: number; pu: Record<string, number> }
 export interface Oferta {
   proveedor: string;
   vigenciaDias: number;
@@ -22,11 +23,12 @@ export const PROVEEDORES_DEMO = [
 ];
 
 export const C1 = {
+  id: "C1",
   titulo: "Concreto premezclado 3000 psi · 14 m³",
   nota: "Comparación limpia: mismo producto, misma cantidad.",
   renglones: [
-    { material: "Concreto 3000 psi", unidad: "m³", cant: 14, pu: { B: 1165, G: 1095 } },
-    { material: "Bombeo", unidad: "m³", cant: 14, pu: { B: 145, G: 160 } },
+    { material: "Concreto 3000 psi", mat: "concreto", cap: 4, unidad: "m³", cant: 14, pu: { B: 1165, G: 1095 } },
+    { material: "Bombeo", mat: "bombeo", cap: 4, unidad: "m³", cant: 14, pu: { B: 145, G: 160 } },
   ] as Renglon[],
   ofertas: [
     { proveedor: "B", vigenciaDias: 7, pago: "Contra entrega", anticipoPct: 0, flete: 0, entrega: "2 días" },
@@ -36,15 +38,16 @@ export const C1 = {
 };
 
 export const C2 = {
+  id: "C2",
   titulo: "Materiales de estructura · 6 renglones",
   nota: "El que gana por renglón no siempre gana en el total.",
   renglones: [
-    { material: "Cemento 42.5 kg", unidad: "saco", cant: 80, pu: { A: 78, F: 80 } },
-    { material: 'Varilla 3/8" × 6 m', unidad: "varilla", cant: 39, pu: { A: 38, F: 40 } },
-    { material: 'Varilla 1/2" × 6 m', unidad: "varilla", cant: 32, pu: { A: 66, F: 64 } },
-    { material: "Alambre de amarre", unidad: "lb", cant: 100, pu: { A: 6, F: 6 } },
-    { material: 'Clavo 3"', unidad: "lb", cant: 10, pu: { A: 8.5, F: 9.2 } },
-    { material: "Block 14×19×39", unidad: "unidad", cant: 800, pu: { A: 4.3, F: 4.2 } },
+    { material: "Cemento 42.5 kg", mat: "cemento", cap: 2, unidad: "saco", cant: 80, pu: { A: 78, F: 80 } },
+    { material: 'Varilla 3/8" × 6 m', mat: "var38", cap: 2, unidad: "varilla", cant: 39, pu: { A: 38, F: 40 } },
+    { material: 'Varilla 1/2" × 6 m', mat: "var12", cap: 2, unidad: "varilla", cant: 32, pu: { A: 66, F: 64 } },
+    { material: "Alambre de amarre", mat: "alambre", cap: 2, unidad: "lb", cant: 100, pu: { A: 6, F: 6 } },
+    { material: 'Clavo 3"', mat: "clavo", cap: 2, unidad: "lb", cant: 10, pu: { A: 8.5, F: 9.2 } },
+    { material: "Block 14×19×39", mat: "block", cap: 3, unidad: "unidad", cant: 800, pu: { A: 4.3, F: 4.2 } },
   ] as Renglon[],
   ofertas: [
     { proveedor: "A", vigenciaDias: 15, pago: "Crédito a 15 días", anticipoPct: 0, flete: 350, entrega: "1 día" },
@@ -65,3 +68,6 @@ export const C3 = {
     { renglon: "Total del documento (Q)", h: 133000, j: 52000 },
   ],
 };
+
+export interface Cotizacion { id: string; titulo: string; nota: string; renglones: Renglon[]; ofertas: Oferta[] }
+export const COMPARABLES: Cotizacion[] = [C1, C2];

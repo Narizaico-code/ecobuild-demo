@@ -1,7 +1,7 @@
-import { btnPrimario, btnSecundario, Card, Titulo } from "../components/ui";
-import { ARCHIVO_NUEVO, CAPITULOS, DUPLICADAS, LINEAS_A_EMPAREJAR, MATERIALES, type Linea } from "../data/obra";
-import { Q } from "../lib/calc";
-import { useDemo } from "../lib/store";
+import { btnPrimario, btnSecundario, Card, Titulo } from "./ui";
+import { ARCHIVO_NUEVO, CAPITULOS, DUPLICADAS, LINEAS_A_EMPAREJAR, MATERIALES, type Linea } from "../../data/obra";
+import { Q } from "../../lib/calc";
+import { useDemo } from "../../lib/store";
 
 const SUCIO = "bg-brick/15 text-brick font-medium";
 

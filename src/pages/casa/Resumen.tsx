@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import { Bar, Card, Etiqueta, Kpi, Titulo } from "../components/ui";
-import { CASA, PRESUPUESTO_TOTAL } from "../data/obra";
-import { Q, kg, pct, resumen } from "../lib/calc";
-import { useDemo } from "../lib/store";
+import { Bar, Card, Etiqueta, Kpi, Titulo } from "./ui";
+import { CASA, PRESUPUESTO_TOTAL } from "../../data/obra";
+import { Q, kg, pct, resumen } from "../../lib/calc";
+import { useDemo } from "../../lib/store";
 
 export default function Resumen() {
   const { lineas, conv, pendientes } = useDemo();
@@ -13,7 +13,7 @@ export default function Resumen() {
       <Titulo kicker={CASA.nombre} sub={`${CASA.detalle}. Etapa: ${CASA.etapa}. Solo cuenta lo que una persona ya confirmó.`}>Resumen de la casa</Titulo>
 
       {pendientes > 0 && (
-        <Link to="/casa/facturas" className="mb-6 block rounded-xl border border-brick/40 bg-brick/10 p-4 text-sm">
+        <Link to="/app/facturas" className="mb-6 block rounded-xl border border-brick/40 bg-brick/10 p-4 text-sm">
           <b>{pendientes} líneas de factura esperan confirmación</b> y todavía no cuentan en estos números. Ir a ordenarlas →
         </Link>
       )}
@@ -74,7 +74,7 @@ export default function Resumen() {
       </Card>
       <p className="mt-3 text-sm text-stone">
         La cobertura es la parte del gasto para la que hay un factor de una fuente pública <i>y</i> alguien confirmó el peso. Lo demás se dice «sin dato»: no se inventa.{" "}
-        <Link to="/casa/carbono" className="font-semibold text-moss underline">Ver materiales y carbono</Link>
+        <Link to="/app/carbono" className="font-semibold text-moss underline">Ver materiales y carbono</Link>
       </p>
     </>
   );

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { btnPrimario, Card, Etiqueta, Titulo } from "../components/ui";
-import { C1, C2, C3, PROVEEDORES_DEMO, type Renglon, type Oferta } from "../data/cotizaciones";
-import { MATERIALES } from "../data/obra";
-import { Q } from "../lib/calc";
+import { btnPrimario, Card, Etiqueta, Titulo } from "./ui";
+import { C1, C2, C3, PROVEEDORES_DEMO, type Renglon, type Oferta } from "../../data/cotizaciones";
+import { MATERIALES } from "../../data/obra";
+import { Q } from "../../lib/calc";
 
 const nombre = (id: string) => PROVEEDORES_DEMO.find((p) => p.id === id)!.nombre;
 

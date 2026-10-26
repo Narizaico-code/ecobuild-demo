@@ -1,8 +1,8 @@
-import { btnPrimario, Etiqueta } from "../components/ui";
-import { FACTORES, FUENTE } from "../data/factores";
-import { CASA, MAT, ORG } from "../data/obra";
-import { huellaLinea, kg, pct, Q, resumen } from "../lib/calc";
-import { useDemo } from "../lib/store";
+import { btnPrimario, Etiqueta } from "./ui";
+import { FACTORES, FUENTE } from "../../data/factores";
+import { CASA, MAT, ORG } from "../../data/obra";
+import { huellaLinea, kg, pct, Q, resumen } from "../../lib/calc";
+import { useDemo } from "../../lib/store";
 
 export default function Reporte() {
   const { lineas, conv, pendientes } = useDemo();
