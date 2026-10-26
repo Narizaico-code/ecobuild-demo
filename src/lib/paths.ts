@@ -13,7 +13,8 @@ export function isComparePath(pathname: string) {
 
 /** Dónde se elige el par A/B. La bandeja no sale en obras/perfil/etc. */
 export function isCompareTrayPath(pathname: string) {
-  if (isComparePath(pathname)) return true;
+  // En el comparador la bandeja repite lo que ya está en pantalla (y en el teléfono lo tapa).
+  if (isComparePath(pathname)) return false;
   if (pathname === "/cotizacion" || pathname === "/app/cotizacion") return true;
   if (pathname === "/app/materiales") return true;
   if (pathname.startsWith("/app/materiales/")) return true;

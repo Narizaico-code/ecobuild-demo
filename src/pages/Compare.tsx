@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useLocation, useSearchParams } from "react-router-dom";
 import { isAppPath } from "../lib/paths";
+import { huellaDe, huellasComparables } from "../lib/origen";
 import { categorias, proveedoresDeMaterial, searchText } from "../data";
 import {
   getMaterialCompleto as getMaterial,
@@ -56,6 +57,33 @@ function MaterialColumn({
         <DigestStrip facts={facts} />
       </details>
     </article>
+  );
+}
+
+/** El veredicto en una frase, arriba: precio por unidad, huella y si la unidad coincide. */
+function Frase({ a, b }: { a: MaterialCompleto; b: MaterialCompleto }) {
+  const mismaU = a.unidad === b.unidad && a.moneda === b.moneda && a.precioReferencia > 0;
+  const dif = mismaU ? Math.round(((b.precioReferencia - a.precioReferencia) / a.precioReferencia) * 100) : null;
+  const h = huellasComparables(a.huellaCarbono, b.huellaCarbono);
+  const ha = huellaDe(a.huellaCarbono), hb = huellaDe(b.huellaCarbono);
+  return (
+    <div className="frase-veredicto">
+      <p>
+        {dif === null
+          ? <>Precio: se venden por {a.unidad} y por {b.unidad}, no se compara directo. </>
+          : <>El B cuesta <b>{Math.abs(dif)} % {dif >= 0 ? "más" : "menos"}</b> por {a.unidad}. </>}
+        {h
+          ? <>Emite <b>{h.b <= h.a ? `${Math.round((1 - h.b / h.a) * 100)} % menos` : `${Math.round((h.b / h.a - 1) * 100)} % más`}</b> CO₂e por {h.por} (declarado). Misma unidad: sí.</>
+          : <>Huella: <span className="tag tag-nocomp">No comparable</span> Misma unidad: no.</>}
+      </p>
+      {!h && (
+        <p className="nota">
+          {ha && hb
+            ? <>A está por {ha.por} y B por {hb.por}. Se resuelve con el peso de una unidad de cada uno (lo da el fabricante en su ficha).</>
+            : <>Uno de los dos no publica la huella con su unidad. Se resuelve pidiendo la declaración ambiental (EPD) al proveedor.</>}
+        </p>
+      )}
+    </div>
   );
 }
 
@@ -127,25 +155,26 @@ export function Compare() {
         </div>
         <div className="toolbar-actions">
           {left || right ? (
-            <button className="btn btn-ghost no-print" type="button" onClick={clear}>
+            <button className="btn btn-ghost no-print hide-sm" type="button" onClick={clear}>
               Quitar los dos
             </button>
           ) : null}
           {left && right ? (
-            <button className="btn btn-ghost no-print" type="button" onClick={() => window.print()}>
+            <button className="btn btn-ghost no-print nt-hide-sm hide-sm" type="button" onClick={() => window.print()}>
               Exportar comparativo
             </button>
           ) : null}
           {isAppPath(pathname) && (left || right) ? (
             <Link
               className="btn btn-ink no-print"
-              to={`/app/cotizaciones?${[left, right].filter(Boolean).map((m) => `material=${m!.id}`).join("&")}#pedir`}
+              to={`/app/cotizaciones?material=${(right ?? left)!.id}#pedir`}
             >
-              Pedir cotización
+              Pedir cotización de esta opción
             </Link>
           ) : null}
         </div>
       </header>
+      {left && right ? <Frase a={left} b={right} /> : null}
 
       <details className="filter-drawer">
         <summary>Filtrar el menú de materiales</summary>

@@ -225,7 +225,7 @@ export function TablaComparativa({
       <RespaldoHistorico categorias={[a.categoria, b.categoria]} />
 
       <details className="fold fold-tabla">
-        <summary>Tabla criterio a criterio</summary>
+        <summary>Ver todos los datos</summary>
       <div className="diff-board">
         <div className="diff-row diff-head">
           <span>Criterio</span>

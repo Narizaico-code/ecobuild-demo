@@ -256,3 +256,11 @@ details.fold > summary { cursor: pointer; }
 .esperando-item b { font-size: 1.5rem; font-family: var(--font-display); }
 .esperando-item.is-on { box-shadow: inset 0 0 0 1.5px var(--olive); }
 .esperando-item:hover { background: var(--nt-hover, var(--mist)); }
+
+/* Comparador en el teléfono: veredicto arriba, columnas apiladas, un solo botón */
+.frase-veredicto { margin: 0 0 1.2rem; padding: 0.9rem 1.1rem; border-radius: var(--nt-radius-lg, 8px); background: var(--nt-surface, var(--bone)); box-shadow: var(--nt-shadow-card, none); font-size: 1rem; line-height: 1.5; }
+@media (max-width: 760px) {
+  .compare-grid.has-2, .pick-pair { grid-template-columns: 1fr !important; }
+  .pick-pair .swap-btn { justify-self: center; }
+  .hide-sm { display: none !important; }
+}
