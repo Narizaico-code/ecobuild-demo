@@ -87,6 +87,13 @@ export default function App() {
                     <Route path="/app/vision" element={<Vision />} />
                     <Route path="/app/vision/:modulo" element={<VistaPrevia />} />
                     <Route path="/app/perfil" element={<Profile />} />
+                    {/* Rutas del EcoBuild anterior que siguen enlazadas desde sus pantallas */}
+                    <Route path="/app/licitaciones" element={<Navigate to="/app/vision/licitaciones" replace />} />
+                    <Route path="/app/mis-licitaciones" element={<Navigate to="/app/vision/ofertas" replace />} />
+                    <Route path="/app/proveedor" element={<Navigate to="/app/vision/proveedor" replace />} />
+                    <Route path="/app/proveedor/certificarse" element={<Navigate to="/app/vision/certificarse" replace />} />
+                    <Route path="/app/horizonte" element={<Navigate to="/app/vision/horizonte" replace />} />
+                    <Route path="/app/obras/:id/expediente" element={<Navigate to="/app/vision/expediente" replace />} />
                     <Route path="/app/*" element={<Navigate to={CASA_PATH} replace />} />
                   </Route>
                 </Route>

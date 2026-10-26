@@ -17,7 +17,7 @@ import {
 import { mapProfile } from "../lib/mappers";
 import { supabase, supabaseConfigured } from "../lib/supabaseClient";
 
-const STORAGE_KEY = "ecobuild-session-v2";
+const STORAGE_KEY = "ecobuild-session-v3";
 
 const LEGACY_IDS = new Set([
   "ecoandes",

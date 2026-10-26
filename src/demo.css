@@ -190,3 +190,12 @@ details.fold > summary { cursor: pointer; }
 .fila-mat:last-child { border-bottom: 0; }
 .fila-mat-top { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; align-items: baseline; }
 .fila-mat .nota { margin-top: 0.25rem; }
+
+/* Proyector a 1366×768: el sidebar entra completo sin desplazarse */
+@media (max-height: 860px) {
+  .app-sidebar { padding-top: 1rem; padding-bottom: 0.8rem; }
+  .app-sidebar-head { margin-bottom: 0.6rem; }
+  .sidebar-eyebrow { margin: 0.6rem 0 0.25rem 0.9rem; }
+  .sidebar-link { padding: 0.42rem 0.9rem; }
+  .app-sidebar-foot { padding-top: 0.5rem; }
+}

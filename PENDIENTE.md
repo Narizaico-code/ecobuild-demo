@@ -1,27 +1,38 @@
-# Pendiente para la sesión 2 (pulido, guion, plan B)
+# Pendiente (demo de la conferencia, martes 2026-10-27)
 
-Estado (2026-10-25): las 8 pantallas están navegables de punta a punta con el dataset de `investigacion-trenton/datos-para-demo.md` §8.
-`pnpm build` + `pnpm preview` funcionan sin internet (fuentes dentro del proyecto, sin CDN, sin llamadas de red).
+Estado (2026-10-25, rediseño): la demo usa el diseño del EcoBuild anterior (`..\Sexto\EcoBuild`: shell con sidebar, Syne + Fraunces + Figtree, colores, componentes) y une su catálogo y comparador con el recorrido nuevo de la casa modelo.
+`pnpm build` + `pnpm preview` funcionan; en el registro de red de la compilación de producción **todas** las peticiones van a localhost (fuentes, texturas e imágenes dentro del proyecto). **No se probó con el cable/wifi cortado de verdad**: hacerlo en el ensayo.
 
-Ruta: `/` Inicio · `/obras` · `/obras/residencial-demo` (lotes) · `/casa/resumen` · `/casa/facturas` (Excel sucio → ordenar → emparejar)
-· `/casa/carbono` · `/casa/reporte` (imprimible) · `/casa/cotizaciones` · `/vision`. «Reiniciar demo» (arriba a la derecha) borra el estado (se guarda en localStorage).
+## Mapa
+- `/` landing (la del anterior, con 3D) · `/acceso` login simulado (cuenta «Desarrolladora Demo», clave `demo`).
+- **Iniciar**: Mis obras → Residencial Demo (19 lotes) → Casa modelo lote 5 (recorrido de 8 pasos y «siguiente paso») · Materiales (107 fichas) → ficha → Comparador → «Pedir cotización» · Cotizaciones (aceptar una crea la orden) · Proveedores.
+- **Administrar**: Órdenes de compra (salen de la cotización aceptada; muestran lo facturado) · Facturas (Excel sucio → ordenar → emparejar; cada línea enlaza a su ficha y a su orden) · Presupuesto por capítulo (gastado, comprometido en órdenes, disponible).
+- **Resultados**: Resumen (cierre: ahorro al comprar y CO₂e evitable) · Materiales y carbono · Reporte imprimible.
+- **Visión**: módulos futuros; los que tienen pantalla en el anterior abren como «vista previa» (expediente para el banco, licitaciones, match de ofertas, panel del proveedor, certificación, horizonte).
+- «Reiniciar demo» (arriba a la derecha) vuelve todo al inicio. El estado vive en localStorage.
 
-## Para la sesión 2
-1. **Pulido visual**: está funcional pero seco. Revisar jerarquía, espacio, móvil, impresión del reporte (`window.print()`), animación del paso «ordenar».
-2. **Guion y ensayo** (3 a 5 min). Camino sugerido: Inicio → Mis obras → casa → Resumen (43% de cobertura) → Facturas → «Ordenar» → «Confirmar las de confianza alta» → confirmar «Materiales» a mano (elegir capítulo) → Resumen otra vez → Carbono («usar referencia» en varillas: la cobertura sube) → Reporte → Cotizaciones → Visión.
-3. **Plan B**: si falla el portátil, un build en `dist/` en un USB y capturas de las 8 pantallas. No hay backend que pueda fallar.
-4. **Decidir con el humano** (por validar):
-   - Los **pesos de referencia** («Usar referencia») son valores generales míos (varilla 1/4, 3/8, 1/2 de tabla de masa nominal; densidad concreto 2 400 kg/m³; arena 1 600; piedrín 1 500). Están rotulados «por confirmar», pero no tienen fuente citada. Confirmar con un ingeniero o quitarlos.
-   - **Cemento sin dato**: la fuente usada no trae factor de cemento. Candidato para después: FICEM/GCCA ~597 kg CO₂/t de material cementicio (Latinoamérica), **sin verificar año ni si es bruto**; no se usó.
-   - Los datos «ilustrativos» (F-0108, F-0110, F-0111, vigencia/pago/anticipo/flete de cotizaciones) están rotulados así en pantalla.
-   - Nombres de proveedores: anonimizados (Ferretería A…). No decir que proveedores reales ya tienen cuenta.
-5. **Cotizaciones reales** (opcional, ≤30 min): pedir al humano 2 o 3 Excel de proveedores para dar realismo. No se pidió todavía.
-6. El catálogo (107 fichas, 20 proveedores) está copiado en `src/data/` pero **no se usa en pantalla**, salvo que «180 kg CO₂e/m³» del concreto bajo carbono sale de `mat-011`. Su huella es **sintetizada** (ver `fuentes.md` del frontend actual), por eso se muestra como «Declarado» y nunca se compara con lo «Estimado».
-7. Decir en voz alta: «importamos su libro de gastos y lo dejamos ordenado». No decir que se importa el NIT ni «cualquier Excel».
+Recorrido sugerido para el guion: Landing → Entrar → Mis obras → lote 5 → Cotizaciones (aceptar) → Órdenes → Facturas («Ordenar», «Confirmar las de confianza alta», «Materiales» a mano) → Presupuesto → Materiales y carbono («usar referencia» en varilla 3/8", «pedirla reciclada») → Resumen → Reporte → Visión.
+
+## Lo que falta o hay que decidir
+1. **Guion y plan B**: los hace otra sesión corta. Plan B: `dist/` en un USB + capturas.
+2. **Prueba sin red real** en el portátil de la conferencia (`pnpm build`, cortar wifi, `pnpm preview`).
+3. **Nombres de terceros en las vistas previas de Visión**: vienen del dataset del EcoBuild anterior (licitaciones de «Fundación Hábitat Altiplano», MINEDUC, «Residencial Bosques de Mixco»…). La pantalla dice «nombres y cifras de ejemplo», pero conviene que el humano decida si se dejan. El panel del proveedor usa un proveedor ficticio («Ferretería A (ejemplo)»).
+4. **Directorio de Proveedores**: lista empresas reales del catálogo público del anterior. No decir que tienen cuenta en EcoBuild.
+5. **Comparador**: la huella solo se compara si las dos fichas usan la misma unidad (bug D9 corregido aquí; `scripts/check-huella.ts`). En el EcoBuild anterior el bug sigue. Las huellas del catálogo son «Declarado» (sintetizadas, ver `src/data/fuentes.md`) y nunca se comparan con las «Estimado» de las facturas.
+6. **Mi cotización** (modo del comparador que lee una lista) viene tal cual del anterior: no se revisó a fondo.
+7. **Móvil**: se revisó a 1366×768 y 1920×1080 (proyector). En teléfono no se revisó.
+8. Chunk principal ~890 kB (three.js del landing va aparte). Sin efecto sin red; solo arranque.
+
+## Cifras resueltas del PENDIENTE anterior
+- **Pesos de referencia** («Usar referencia»):
+  - Varilla 3/8" × 6 m = 3.36 kg y 1/2" × 6 m = 5.96 kg: masa nominal de **ASTM A615/A615M, tabla 1** (#3: 0.560 kg/m; #4: 0.994 kg/m), consultada 2026-10-25 en https://www.ckcog.com/wp-content/uploads/Rebar-Sizing.pdf. Sigue «por confirmar con el fabricante».
+  - Concreto 2 400 kg/m³: **FHWA, «Portland Cement Concrete Materials»** (2 240 a 2 400 kg/m³; se toma el alto), https://www.fhwa.dot.gov/pavement/pubs/013683.pdf, consultado 2026-10-25.
+  - **Quitados** por no tener fuente citable: varilla 1/4" (no está en la tabla de ASTM A615), arena 1 600 y piedrín 1 500 kg/m³. Ahora la pantalla pide el dato al proveedor.
+- **Cemento: «sin dato», explicado en pantalla.** La única fuente usada (Defra 2025, «Material use») no trae cemento; mezclar otra fuente con otro método no daría una cifra comparable. Lo correcto es la EPD del fabricante local (no se buscó cuál publica una; hay EPD de cemento de otros fabricantes de la región).
 
 ## Factores de CO₂ usados (todos «Estimado»)
 Fuente única: **UK Government GHG Conversion Factors for Company Reporting 2025 (DESNZ/Defra)**, hoja «Material use», columna «Primary material production» (cuna a puerta, genérico del Reino Unido, no de Guatemala).
-Publicado 2025-06-10 · consultado 2026-10-25 (archivo full-set leído directamente) · https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2025
+Publicado 2025-06-10 · consultado 2026-10-25 · https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2025
 Licencia: Open Government Licence v3.0, declarada en la página de publicación («salvo indicación»). Por confirmar para uso comercial.
 
 | Material (fila) | kg CO₂e por tonelada | Se usa en |
@@ -35,4 +46,7 @@ Licencia: Open Government Licence v3.0, declarada en la página de publicación 
 | Glass | 1 402.76667 | sin uso aún |
 
 **Sin dato** (no hay factor en esa fuente): cemento, cal, repello, piso cerámico, tubería PVC, cable, fletes, bombeo.
-Límites: son factores genéricos, no productos; «Metals» no es «varilla». Los pesos por unidad no vienen de la fuente.
+Límites: son factores genéricos, no productos; «Metals» no es «varilla».
+
+## Datos ilustrativos (rotulados en pantalla)
+F-0108, F-0110, F-0111; vigencia, pago, anticipo y flete de las cotizaciones; la cotización C2. Proveedores anonimizados (Ferretería A…). Decir en voz alta: «importamos su libro de gastos y lo dejamos ordenado». No decir que se importa el NIT ni «cualquier Excel».
