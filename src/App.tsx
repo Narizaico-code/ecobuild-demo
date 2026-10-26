@@ -16,6 +16,8 @@ import { Profile } from "./pages/Profile";
 import { Vision, VistaPrevia } from "./pages/Vision";
 import { Casa, MisObras, Proyecto } from "./pages/obra/Obras";
 import { Inicio } from "./pages/obra/Inicio";
+import { Papeles } from "./pages/obra/Papeles";
+import { Campo } from "./pages/obra/Campo";
 import { Alternativas, Necesidades } from "./pages/obra/Necesidades";
 import { ObraPlan } from "./pages/ObraPlan";
 import { Expediente } from "./pages/Expediente";
@@ -77,6 +79,8 @@ export default function App() {
                     <Route path={CASA_PATH} element={<Casa />} />
                     <Route path={`${CASA_PATH}/necesidades`} element={<Necesidades />} />
                     <Route path={`${CASA_PATH}/alternativas`} element={<Alternativas />} />
+                    <Route path={`${CASA_PATH}/papeles`} element={<Papeles />} />
+                    <Route path={`${CASA_PATH}/campo`} element={<Campo />} />
                     <Route path={`${OBRAS_PATH}/:id`} element={<ObraPlan />} />
                     <Route path={`${OBRAS_PATH}/:id/expediente`} element={<Expediente />} />
                     <Route path="/app/materiales" element={<Catalog />} />

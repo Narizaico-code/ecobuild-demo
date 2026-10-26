@@ -264,3 +264,10 @@ details.fold > summary { cursor: pointer; }
   .pick-pair .swap-btn { justify-self: center; }
   .hide-sm { display: none !important; }
 }
+.papel { display: grid; gap: 0.45rem; }
+.papel div { display: grid; grid-template-columns: 9rem 1fr; gap: 0.6rem; font-size: 0.88rem; }
+.papel dt { color: var(--stone); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.adenda { margin-top: 0.6rem; padding: 0.6rem 0.8rem; border-left: 3px solid var(--limewash); background: var(--nt-surface-2, var(--linen)); font-size: 0.88rem; }
+.panel-head { flex-wrap: wrap; }
+.panel-head > div { flex: 1 1 14rem; min-width: 0; }
+@media (max-width: 760px) { .papel div { grid-template-columns: 1fr; gap: 0.1rem; } }

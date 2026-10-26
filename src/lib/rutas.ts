@@ -18,6 +18,8 @@ const FIJAS: Record<string, Miga[]> = {
   [CASA_PATH]: [OBRAS, PROYECTO, { label: "Casa modelo · Lote 5" }],
   [`${CASA_PATH}/necesidades`]: enCasa("Necesidades"),
   [`${CASA_PATH}/alternativas`]: enCasa("Alternativas"),
+  [`${CASA_PATH}/papeles`]: enCasa("Papeles"),
+  [`${CASA_PATH}/campo`]: enCasa("Bitácora y entrega"),
   "/app/materiales": [{ label: "Materiales" }],
   "/app/comparar": [{ label: "Materiales", to: "/app/materiales" }, { label: "Comparador" }],
   "/app/cotizacion": [{ label: "Materiales", to: "/app/materiales" }, { label: "Revisar mi cotización" }],

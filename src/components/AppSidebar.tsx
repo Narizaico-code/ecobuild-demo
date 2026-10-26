@@ -25,6 +25,8 @@ const SECCIONES: { titulo: string; items: NavItem[] }[] = [
       { to: "/app/presupuesto", label: "Presupuesto", icon: "wallet", sub: true },
       { to: "/app/resumen", label: "Resumen", icon: "chart", sub: true },
       { to: "/app/carbono", label: "Materiales y carbono", icon: "leaf", sub: true },
+      { to: `${CASA_PATH}/papeles`, label: "Papeles", icon: "receipt", sub: true },
+      { to: `${CASA_PATH}/campo`, label: "Bitácora y entrega", icon: "clipboard", sub: true },
     ],
   },
   {

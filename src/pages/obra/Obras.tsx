@@ -187,6 +187,8 @@ export function Casa() {
             <li><Link className="link-cruzado" to="/app/ordenes">Órdenes de compra</Link>: lo aceptado y cuánto ya se facturó.</li>
             <li><Link className="link-cruzado" to="/app/facturas">Facturas</Link>: del Excel sucio a líneas confirmadas.</li>
             <li><Link className="link-cruzado" to="/app/presupuesto">Presupuesto</Link>: por capítulo, gastado y comprometido.</li>
+            <li><Link className="link-cruzado" to={`${CASA_PATH}/papeles`}>Papeles</Link>: licencias, contratos y dónde está cada original.</li>
+            <li><Link className="link-cruzado" to={`${CASA_PATH}/campo`}>Bitácora y entrega</Link>: el día a día, el acta y la postventa.</li>
           </ul>
         </Panel>
       </div>
