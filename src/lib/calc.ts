@@ -52,3 +52,13 @@ export function resumen(lineas: Linea[], conv: Record<string, number>) {
     materiales: [...porMat.values()].sort((a, b) => b.gasto - a.gasto),
   };
 }
+
+/** Varilla con metal reciclado: misma masa confirmada, factor de circuito cerrado. Solo cuenta varilla con peso. */
+export function varillaReciclada(lineas: Linea[], conv: Record<string, number>) {
+  const vars = lineas.filter((l) => l.mat && ["var14", "var38", "var12"].includes(l.mat));
+  const conPeso = vars.filter((l) => huellaLinea(l, conv).estado === "comparable");
+  const masaT = conPeso.reduce((s, l) => s + (l.cant * kgPorUnidad(l.mat!, conv)!) / 1000, 0);
+  const f = FACTORES.metales;
+  const base = masaT * f.kgPorT, alt = masaT * f.kgPorTReciclado!;
+  return { masaT, base, alt, evitable: base - alt, faltan: vars.length - conPeso.length };
+}

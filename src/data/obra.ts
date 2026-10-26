@@ -46,22 +46,23 @@ export interface MatDemo {
   catalogo?: string; // ficha más parecida del catálogo (para ir de la factura al material y al comparador)
 }
 const LB = 0.45359237;
-const TABLA = "tabla de masa nominal por metro, por confirmar con la ficha del fabricante";
-const DENS = "densidad aparente general, por confirmar";
+// Referencias con fuente (consultadas 2026-10-25). Siguen siendo «por confirmar» con el fabricante.
+const ASTM = "masa nominal de ASTM A615/A615M, tabla 1 (#3: 0.560 kg/m; #4: 0.994 kg/m) × 6 m. Consultado en https://www.ckcog.com/wp-content/uploads/Rebar-Sizing.pdf";
+const FHWA = "FHWA, «Portland Cement Concrete Materials»: el concreto de uso normal pesa 2 240 a 2 400 kg/m³; se toma el valor alto. https://www.fhwa.dot.gov/pavement/pubs/013683.pdf";
 export const MATERIALES: MatDemo[] = [
   { id: "cemento", catalogo: "mat-001", nombre: "Cemento gris 42.5 kg", unidad: "saco", kgPorUnidad: 42.5 },
   { id: "arena", catalogo: "mat-012", nombre: "Arena de río", unidad: "m³", factor: "agregados",
-    conv: { pregunta: "¿Cuánto pesa un m³ de arena?", unidadConv: "kg/m³", ref: 1600, refNota: DENS } },
+    conv: { pregunta: "¿Cuánto pesa un m³ de arena? (lo sabe el proveedor)", unidadConv: "kg/m³" } },
   { id: "piedrin", catalogo: "mat-014", nombre: "Piedrín", unidad: "m³", factor: "agregados",
-    conv: { pregunta: "¿Cuánto pesa un m³ de piedrín?", unidadConv: "kg/m³", ref: 1500, refNota: DENS } },
+    conv: { pregunta: "¿Cuánto pesa un m³ de piedrín? (lo sabe el proveedor)", unidadConv: "kg/m³" } },
   { id: "selecto", nombre: "Material selecto", unidad: "m³", factor: "agregados",
     conv: { pregunta: "¿Cuánto pesa un m³ de material selecto?", unidadConv: "kg/m³" } },
   { id: "var14", nombre: 'Varilla corrugada 1/4" × 6 m', unidad: "varilla", factor: "metales",
-    conv: { pregunta: 'Se compra por varilla y la huella es por kg: ¿cuánto pesa una varilla de 1/4" × 6 m?', unidadConv: "kg/varilla", ref: 1.49, refNota: TABLA } },
+    conv: { pregunta: 'Se compra por varilla y la huella es por kg: ¿cuánto pesa una varilla de 1/4" × 6 m? (no está en la tabla ASTM A615: lo dice el fabricante)', unidadConv: "kg/varilla" } },
   { id: "var38", catalogo: "mat-016", nombre: 'Varilla corrugada 3/8" × 6 m', unidad: "varilla", factor: "metales",
-    conv: { pregunta: 'Se compra por varilla y la huella es por kg: ¿cuánto pesa una varilla de 3/8" × 6 m?', unidadConv: "kg/varilla", ref: 3.36, refNota: TABLA } },
+    conv: { pregunta: 'Se compra por varilla y la huella es por kg: ¿cuánto pesa una varilla de 3/8" × 6 m?', unidadConv: "kg/varilla", ref: 3.36, refNota: ASTM } },
   { id: "var12", nombre: 'Varilla corrugada 1/2" × 6 m', unidad: "varilla", factor: "metales",
-    conv: { pregunta: 'Se compra por varilla y la huella es por kg: ¿cuánto pesa una varilla de 1/2" × 6 m?', unidadConv: "kg/varilla", ref: 5.97, refNota: TABLA } },
+    conv: { pregunta: 'Se compra por varilla y la huella es por kg: ¿cuánto pesa una varilla de 1/2" × 6 m?', unidadConv: "kg/varilla", ref: 5.96, refNota: ASTM } },
   { id: "alambre", catalogo: "mat-018", nombre: "Alambre de amarre", unidad: "lb", factor: "metales", kgPorUnidad: LB },
   { id: "clavo", nombre: 'Clavo 3"', unidad: "lb", factor: "metales", kgPorUnidad: LB },
   { id: "block", catalogo: "mat-023", nombre: "Block 14×19×39 cm", unidad: "unidad", factor: "concreto",
@@ -71,7 +72,7 @@ export const MATERIALES: MatDemo[] = [
   { id: "bovedilla", nombre: "Bovedilla 10×20×52", unidad: "unidad", factor: "concreto",
     conv: { pregunta: "¿Cuánto pesa una bovedilla?", unidadConv: "kg/unidad" } },
   { id: "concreto", catalogo: "mat-008", nombre: "Concreto premezclado 3000 psi", unidad: "m³", factor: "concreto",
-    conv: { pregunta: "¿Cuánto pesa un m³ de concreto?", unidadConv: "kg/m³", ref: 2400, refNota: "densidad típica de concreto normal, por confirmar con la concretera" } },
+    conv: { pregunta: "¿Cuánto pesa un m³ de concreto?", unidadConv: "kg/m³", ref: 2400, refNota: FHWA } },
   { id: "bombeo", nombre: "Bombeo de concreto", unidad: "m³" },
   { id: "flete", nombre: "Flete", unidad: "viaje" },
   { id: "cal", catalogo: "mat-006", nombre: "Cal hidratada", unidad: "bolsa" },

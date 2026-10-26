@@ -1,22 +1,32 @@
-import { btnPrimario, Etiqueta } from "./ui";
+import { Link } from "react-router-dom";
+import { Etiqueta } from "../../components/obra/ui";
+import { ordenesDe } from "../../lib/ordenes";
 import { FACTORES, FUENTE } from "../../data/factores";
 import { CASA, MAT, ORG } from "../../data/obra";
 import { huellaLinea, kg, pct, Q, resumen } from "../../lib/calc";
 import { useDemo } from "../../lib/store";
 
-export default function Reporte() {
-  const { lineas, conv, pendientes } = useDemo();
+export function Reporte() {
+  const { lineas, conv, pendientes, aceptadas } = useDemo();
+  const ordenes = ordenesDe(aceptadas, lineas);
   const r = resumen(lineas, conv);
   const filas = r.materiales.filter((m) => m.id !== "_sin");
   const usados = [...new Set(filas.map((m) => MAT[m.id].factor).filter(Boolean))] as string[];
   return (
-    <>
-      <div className="mb-4 flex items-center justify-between print:hidden">
-        <p className="text-sm text-stone">Vista previa del documento. Cada versión generada queda guardada y no se edita.</p>
-        <button className={btnPrimario} onClick={() => window.print()}>Imprimir / guardar PDF</button>
-      </div>
+    <div>
+      <header className="dash-head no-print">
+        <div>
+          <p className="eyebrow">Resultados · Casa modelo lote 5</p>
+          <h1 className="display">Reporte <span className="italic">imprimible</span></h1>
+          <p className="dash-sub">El documento para el banco, el inversionista o la certificadora: qué se compró, su huella y de dónde sale cada cifra.</p>
+        </div>
+        <div className="toolbar-actions">
+          <Link className="btn btn-ghost" to="/app/resumen">Volver al resumen</Link>
+          <button className="btn btn-ink" type="button" onClick={() => window.print()}>Imprimir / guardar PDF</button>
+        </div>
+      </header>
 
-      <article className="mx-auto max-w-4xl rounded-xl border border-ink/10 bg-white p-8 text-[13px] leading-relaxed print:rounded-none print:border-0 print:p-0">
+      <article className="reporte mx-auto max-w-4xl border border-ink/10 bg-white p-8 text-[13px] leading-relaxed print:rounded-none print:border-0 print:p-0">
         <header className="border-b-2 border-moss pb-4">
           <div className="font-display text-sm font-extrabold text-moss">EcoBuild</div>
           <h1 className="font-display text-3xl font-bold">Materiales y carbono</h1>
@@ -34,6 +44,17 @@ export default function Reporte() {
           El {pct(1 - r.cobertura)} restante figura como «sin dato» o «no comparable»; no se estimó.
           {pendientes > 0 && <> Hay {pendientes} líneas de factura sin confirmar que no están incluidas.</>}
         </p>
+
+        {ordenes.length > 0 && (
+          <>
+            <h2 className="mb-2 mt-6 font-display text-lg font-bold">Compras con orden</h2>
+            <ul className="list-disc pl-5">
+              {ordenes.map((o) => (
+                <li key={o.id}>{o.id} · {o.proveedor} · {o.cot.titulo}: {Q(o.total)} ({o.ahorro >= 0 ? `${Q(o.ahorro)} menos` : `${Q(-o.ahorro)} más`} que la otra oferta)</li>
+              ))}
+            </ul>
+          </>
+        )}
 
         <h2 className="mb-2 mt-6 font-display text-lg font-bold">Detalle por material</h2>
         <table className="w-full border-collapse">
@@ -75,6 +96,6 @@ export default function Reporte() {
           <li>Este documento no es una certificación ni una declaración ambiental de producto.</li>
         </ul>
       </article>
-    </>
+    </div>
   );
 }

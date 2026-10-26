@@ -19,9 +19,9 @@ import { Cotizaciones } from "./pages/obra/Cotizaciones";
 import { Ordenes } from "./pages/obra/Ordenes";
 import { Presupuesto } from "./pages/obra/Presupuesto";
 import { Facturas } from "./pages/obra/Facturas";
-import Resumen from "./pages/casa/Resumen";
-import Carbono from "./pages/casa/Carbono";
-import Reporte from "./pages/casa/Reporte";
+import { Resumen } from "./pages/obra/Resumen";
+import { Carbono } from "./pages/obra/Carbono";
+import { Reporte } from "./pages/obra/Reporte";
 import { CASA_PATH, OBRAS_PATH, PROYECTO_PATH } from "./lib/rutas";
 
 const Landing = lazy(() => import("./pages/Landing").then((m) => ({ default: m.Landing })));
