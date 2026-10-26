@@ -1,0 +1,636 @@
+[
+  {
+    "id": "prov-nacional-01",
+    "nombre": "Cementos Progreso (Grupo Progreso)",
+    "tipo": "nacional",
+    "pais": "Guatemala",
+    "ciudad": "Ciudad de Guatemala",
+    "ranking": 96,
+    "especialidad": "Cemento, cal, agregados y concreto para infraestructura",
+    "descripcion": "Compañía líder centroamericana en cemento, materiales y soluciones de construcción, con unidades en Construcción, Agro, Energía y Desarrollo Inmobiliario. Fundada por Carlos F. Novella; opera en 8 países de Latinoamérica. Incluye Horcalsa (cal) y Agregados de Guatemala.",
+    "materialIds": [
+      "mat-001",
+      "mat-002",
+      "mat-005",
+      "mat-006",
+      "mat-012",
+      "mat-013",
+      "mat-014",
+      "mat-028",
+      "mat-029",
+      "mat-051",
+      "mat-052",
+      "mat-053",
+      "mat-060"
+    ],
+    "logo": "https://images.unsplash.com/photo-1517581178692-ce968cecc38b?auto=format&fit=crop&w=1400&q=80",
+    "certificaciones": [
+      "ISO 14001",
+      "ISO 45001",
+      "ASTM C1157",
+      "NTG 41095",
+      "GCCA"
+    ],
+    "contacto": {
+      "telefono": "+502 2410-5000",
+      "email": "contacto@progreso.com",
+      "web": "https://progreso.com/"
+    },
+    "sostenibilidadScore": 68,
+    "anioFundacion": 1899,
+    "empleados": "5,000+"
+  },
+  {
+    "id": "prov-nacional-02",
+    "nombre": "Holcim Guatemala",
+    "tipo": "nacional",
+    "pais": "Guatemala",
+    "ciudad": "Ciudad de Guatemala",
+    "ranking": 94,
+    "especialidad": "Cemento, concreto premezclado, morteros Tector y red Disensa",
+    "descripcion": "Holcim Guatemala fabrica cemento Holcim Fuerte 4060 y Super Resistente 5800 (ASTM C-1157 / NTG 41095), soluciones de concreto para vivienda, naves y gran altura, y morteros Tector. Expande la ferretería Disensa y alianzas de vivienda resiliente con Build Change.",
+    "materialIds": [
+      "mat-001",
+      "mat-003",
+      "mat-004",
+      "mat-005",
+      "mat-007",
+      "mat-008",
+      "mat-011",
+      "mat-047",
+      "mat-064"
+    ],
+    "logo": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=80",
+    "certificaciones": [
+      "ASTM C-1157",
+      "NTG 41095",
+      "Top Employer 2025",
+      "ISO 14001"
+    ],
+    "contacto": {
+      "telefono": "+502 2420-4000",
+      "email": "info.guatemala@holcim.com",
+      "web": "https://www.holcim.com.gt/"
+    },
+    "sostenibilidadScore": 74,
+    "anioFundacion": 1999,
+    "empleados": "1,200+"
+  },
+  {
+    "id": "prov-nacional-03",
+    "nombre": "Mixto Listo",
+    "tipo": "nacional",
+    "pais": "Guatemala",
+    "ciudad": "Villa Nueva",
+    "ranking": 88,
+    "especialidad": "Concreto premezclado 2,500–5,000 PSI puesto en obra",
+    "descripcion": "Asociado Construguate (CGIC) especializado en concreto premezclado para edificación e infraestructura metropolitana. Cotizaciones alineadas al listado de materiales de la Cámara (enero 2025) para 2500, 3500, 4000 y 5000 PSI.",
+    "materialIds": [
+      "mat-007",
+      "mat-008",
+      "mat-009",
+      "mat-010",
+      "mat-011",
+      "mat-012",
+      "mat-014",
+      "mat-015"
+    ],
+    "logo": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80",
+    "certificaciones": [
+      "ASTM C94",
+      "NTG 41017",
+      "ISO 9001"
+    ],
+    "contacto": {
+      "telefono": "+502 2477-0100",
+      "email": "ventas@mixtolisto.com.gt",
+      "web": "https://www.mixtolisto.com.gt/"
+    },
+    "sostenibilidadScore": 52,
+    "anioFundacion": 1992,
+    "empleados": "400-600"
+  },
+  {
+    "id": "prov-nacional-04",
+    "nombre": "PRECON",
+    "tipo": "nacional",
+    "pais": "Guatemala",
+    "ciudad": "Amatitlán",
+    "ranking": 86,
+    "especialidad": "Prefabricados de concreto, tubos, postes y muros",
+    "descripcion": "Asociado Construguate de prefabricados: muros de 5 cm, tubos de concreto con y sin refuerzo, postes y elementos estructurales. Reduce tiempo de obra frente a fundición in situ.",
+    "materialIds": [
+      "mat-004",
+      "mat-010",
+      "mat-015",
+      "mat-026",
+      "mat-031",
+      "mat-032",
+      "mat-033",
+      "mat-034"
+    ],
+    "logo": "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1400&q=80",
+    "certificaciones": [
+      "ASTM C76",
+      "NTG 41056",
+      "ISO 9001"
+    ],
+    "contacto": {
+      "telefono": "+502 6633-1000",
+      "email": "info@precon.com.gt",
+      "web": "https://www.precon.com.gt/"
+    },
+    "sostenibilidadScore": 58,
+    "anioFundacion": 1963,
+    "empleados": "800-1,000"
+  },
+  {
+    "id": "prov-nacional-05",
+    "nombre": "BLOCASA",
+    "tipo": "nacional",
+    "pais": "Guatemala",
+    "ciudad": "Villa Nueva",
+    "ranking": 79,
+    "especialidad": "Block de pómez, block de concreto y adoquín",
+    "descripcion": "BLOCASA, S. A. — asociado Construguate (CGIC, materiales de construcción). Produce mampostería de pómez liviana y block estándar, además de adoquín para pavimentos.",
+    "materialIds": [
+      "mat-023",
+      "mat-024",
+      "mat-025",
+      "mat-026",
+      "mat-027",
+      "mat-028"
+    ],
+    "logo": "https://images.unsplash.com/photo-1464146072230-91cabc968266?auto=format&fit=crop&w=1400&q=80",
+    "certificaciones": [
+      "ASTM C90",
+      "NTG 41054",
+      "COGUANOR"
+    ],
+    "contacto": {
+      "telefono": "+502 2479-2020",
+      "email": "ventas@blocasa.com.gt",
+      "web": "https://construguate.com/asociado/blocasa"
+    },
+    "sostenibilidadScore": 48,
+    "anioFundacion": 1978,
+    "empleados": "150-250"
+  },
+  {
+    "id": "prov-nacional-06",
+    "nombre": "Aceros Tonca",
+    "tipo": "nacional",
+    "pais": "Guatemala",
+    "ciudad": "Ciudad de Guatemala",
+    "ranking": 84,
+    "especialidad": "Diseño, fabricación y montaje de estructura metálica",
+    "descripcion": "Toneladas de Centro América, S. A. (Aceros Tonca). Asociado Construguate CGIC, categoría Acero y metal. Diseño, fabricación y montaje de estructuras metálicas; también distribuye varilla, angular y lámina.",
+    "materialIds": [
+      "mat-016",
+      "mat-017",
+      "mat-018",
+      "mat-019",
+      "mat-020",
+      "mat-021",
+      "mat-022",
+      "mat-049",
+      "mat-065"
+    ],
+    "logo": "https://images.unsplash.com/photo-1504307651254-35680f356248?auto=format&fit=crop&w=1400&q=80",
+    "certificaciones": [
+      "AWS D1.1",
+      "AISC",
+      "ISO 9001"
+    ],
+    "contacto": {
+      "telefono": "+502 2427-8889",
+      "email": "info@acerostonca.com",
+      "web": "https://acerostonca.com/"
+    },
+    "sostenibilidadScore": 55,
+    "anioFundacion": 1987,
+    "empleados": "200-350"
+  },
+  {
+    "id": "prov-nacional-07",
+    "nombre": "Durman (Aliaxis Guatemala)",
+    "tipo": "nacional",
+    "pais": "Guatemala",
+    "ciudad": "Ciudad de Guatemala",
+    "ranking": 90,
+    "especialidad": "Tubería PVC/PE, drenaje y sistemas hidrosanitarios",
+    "descripcion": "Asociado Construguate. Marca Durman (grupo Aliaxis) con tubería a presión, sanitarios, poliducto y soluciones de drenaje pluvial. Amplia red de ferreterías en el país.",
+    "materialIds": [
+      "mat-035",
+      "mat-036",
+      "mat-037",
+      "mat-038",
+      "mat-040",
+      "mat-067",
+      "mat-069",
+      "mat-072"
+    ],
+    "logo": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1400&q=80",
+    "certificaciones": [
+      "NSF",
+      "ASTM D1785",
+      "ISO 14001",
+      "NTG 29001"
+    ],
+    "contacto": {
+      "telefono": "+502 2420-3030",
+      "email": "servicio.gt@durman.com",
+      "web": "https://www.durman.com/"
+    },
+    "sostenibilidadScore": 62,
+    "anioFundacion": 1965,
+    "empleados": "300-450"
+  },
+  {
+    "id": "prov-nacional-08",
+    "nombre": "Samboro",
+    "tipo": "nacional",
+    "pais": "Guatemala",
+    "ciudad": "Ciudad de Guatemala",
+    "ranking": 91,
+    "especialidad": "Pisos, azulejos, fachaletas, loza sanitaria y grifería",
+    "descripcion": "Empresa guatemalteca 100% nacional con más de 30 años. Fábrica moderna en Latinoamérica; portafolio de cerámica, porcelanato, Castello, adhesivos, sisas, loza y grifería. Oficinas: 10a Avenida 0-19 zona 7.",
+    "materialIds": [
+      "mat-042",
+      "mat-043",
+      "mat-044",
+      "mat-045",
+      "mat-046"
+    ],
+    "logo": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=1400&q=80",
+    "certificaciones": [
+      "ISO 9001",
+      "Green Squared",
+      "COGUANOR NTG 41007"
+    ],
+    "contacto": {
+      "telefono": "+502 2362-1874",
+      "email": "info@samboro.com",
+      "web": "https://www.samboro.com/"
+    },
+    "sostenibilidadScore": 61,
+    "anioFundacion": 1990,
+    "empleados": "600-800"
+  },
+  {
+    "id": "prov-nacional-09",
+    "nombre": "CEMIX Guatemala",
+    "tipo": "nacional",
+    "pais": "Guatemala",
+    "ciudad": "Ciudad de Guatemala",
+    "ranking": 82,
+    "especialidad": "Morteros, adhesivos para cerámica e impermeabilizantes",
+    "descripcion": "Asociado Construguate. CEMIX formula morteros de pega, cernidos, adhesivos y sistemas de impermeabilización para mampostería y acabados. Complementa pisos Samboro y block local.",
+    "materialIds": [
+      "mat-046",
+      "mat-047",
+      "mat-048",
+      "mat-049"
+    ],
+    "logo": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=80",
+    "certificaciones": [
+      "ISO 9001",
+      "ANSI A118",
+      "GreenGuard"
+    ],
+    "contacto": {
+      "telefono": "+502 2277-8888",
+      "email": "ventas.gt@cemix.com",
+      "web": "https://www.cemix.com/"
+    },
+    "sostenibilidadScore": 57,
+    "anioFundacion": 1996,
+    "empleados": "180-280"
+  },
+  {
+    "id": "prov-nacional-10",
+    "nombre": "Rotoplas Guatemala",
+    "tipo": "nacional",
+    "pais": "Guatemala",
+    "ciudad": "Ciudad de Guatemala",
+    "ranking": 87,
+    "especialidad": "Tinacos, cosecha de lluvia y saneamiento descentralizado",
+    "descripcion": "Asociado Construguate. Soluciones de almacenamiento de agua, biodigestores y captación pluvial para vivienda e institucional. Precios de tinacos 450–1,100 L alineados al listado Cámara enero 2025.",
+    "materialIds": [
+      "mat-039",
+      "mat-040",
+      "mat-041",
+      "mat-045",
+      "mat-054"
+    ],
+    "logo": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=1400&q=80",
+    "certificaciones": [
+      "NSF/ANSI 61",
+      "ISO 9001",
+      "ESR"
+    ],
+    "contacto": {
+      "telefono": "+502 2422-7000",
+      "email": "contacto.gt@rotoplas.com",
+      "web": "https://rotoplas.com.gt/"
+    },
+    "sostenibilidadScore": 78,
+    "anioFundacion": 2001,
+    "empleados": "120-200"
+  },
+  {
+    "id": "prov-internacional-01",
+    "nombre": "Saint-Gobain",
+    "tipo": "internacional",
+    "pais": "Francia",
+    "ciudad": "Courbevoie",
+    "ranking": 97,
+    "especialidad": "Aislamiento Isover, yeso Gyproc, morteros Weber y vidrio",
+    "descripcion": "Grupo industrial de construcción ligera y vidrio. Marcas Isover (lana mineral), Gyproc (tablaroca), Weber (morteros) y vidrio de control solar. Metas de carbono y EPDs por línea.",
+    "materialIds": [
+      "mat-050",
+      "mat-055",
+      "mat-056",
+      "mat-064",
+      "mat-068",
+      "mat-070",
+      "mat-071"
+    ],
+    "logo": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80",
+    "certificaciones": [
+      "EPD",
+      "Cradle to Cradle",
+      "ISO 14001",
+      "LEED eligible"
+    ],
+    "contacto": {
+      "telefono": "+33 1 88 54 00 00",
+      "email": "contact@saint-gobain.com",
+      "web": "https://www.saint-gobain.com/"
+    },
+    "sostenibilidadScore": 86,
+    "anioFundacion": 1665,
+    "empleados": "160,000+"
+  },
+  {
+    "id": "prov-internacional-02",
+    "nombre": "Knauf Insulation",
+    "tipo": "internacional",
+    "pais": "Alemania",
+    "ciudad": "Iphofen",
+    "ranking": 93,
+    "especialidad": "Lana mineral de vidrio y roca con aglutinante ECOSE",
+    "descripcion": "Aislamiento para mejor desempeño energético. Tecnología ECOSE (aglutinante sin formaldehído a base de plantas). Reportes de sostenibilidad y lana de roca de bajo carbono.",
+    "materialIds": [
+      "mat-055",
+      "mat-056"
+    ],
+    "logo": "https://images.unsplash.com/photo-1484154214962-2d7eef3278e6?auto=format&fit=crop&w=1400&q=80",
+    "certificaciones": [
+      "EUCEB",
+      "Eurofins Indoor Air Gold",
+      "EPD",
+      "Declare"
+    ],
+    "contacto": {
+      "telefono": "+49 9323 31-0",
+      "email": "info@knaufinsulation.com",
+      "web": "https://www.knaufinsulation.com/"
+    },
+    "sostenibilidadScore": 88,
+    "anioFundacion": 1932,
+    "empleados": "6,000+"
+  },
+  {
+    "id": "prov-internacional-03",
+    "nombre": "Interface",
+    "tipo": "internacional",
+    "pais": "Estados Unidos",
+    "ciudad": "Atlanta",
+    "ranking": 95,
+    "especialidad": "Losetas de alfombra carbono-negativas y pisos resilientes",
+    "descripcion": "Pionero en pisos comerciales Climate Take Back. Losetas con alto contenido reciclado, programa ReEntry y líneas carbon negative (embodied carbon). C2C y EPDs de producto.",
+    "materialIds": [
+      "mat-061"
+    ],
+    "logo": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1400&q=80",
+    "certificaciones": [
+      "Carbon Neutral / Negative lines",
+      "Cradle to Cradle",
+      "EPD",
+      "Declare",
+      "GSA"
+    ],
+    "contacto": {
+      "telefono": "+1 800-336-0225",
+      "email": "sustainability@interface.com",
+      "web": "https://www.interface.com/"
+    },
+    "sostenibilidadScore": 94,
+    "anioFundacion": 1973,
+    "empleados": "3,600+"
+  },
+  {
+    "id": "prov-internacional-04",
+    "nombre": "Forbo Flooring Systems",
+    "tipo": "internacional",
+    "pais": "Suiza",
+    "ciudad": "Baar",
+    "ranking": 92,
+    "especialidad": "Linóleo Marmoleum, LVT Allura y sistemas de entrada",
+    "descripcion": "Más de 150 años en recubrimientos. Marmoleum (linóleo de aceite de linaza, harina de madera y yute) con líneas Solid y Cocoa; LVT Allura Decibel y vinilo homogéneo Sphera.",
+    "materialIds": [
+      "mat-062"
+    ],
+    "logo": "https://images.unsplash.com/photo-1556912173-46c336c7fd55?auto=format&fit=crop&w=1400&q=80",
+    "certificaciones": [
+      "Blue Angel",
+      "EPD",
+      "Indoor Air Comfort Gold",
+      "FSC (backing)"
+    ],
+    "contacto": {
+      "telefono": "+41 58 787 25 25",
+      "email": "info.flooring@forbo.com",
+      "web": "https://www.forbo.com/flooring/"
+    },
+    "sostenibilidadScore": 91,
+    "anioFundacion": 1928,
+    "empleados": "5,500+"
+  },
+  {
+    "id": "prov-internacional-05",
+    "nombre": "CEMEX",
+    "tipo": "internacional",
+    "pais": "México",
+    "ciudad": "San Pedro Garza García",
+    "ranking": 94,
+    "especialidad": "Cemento y concreto de baja huella Vertua",
+    "descripcion": "Cementero global con línea Vertua (cemento y concreto de menor CO2e, con adiciones y clínker reducido). Presente en LatAm; alternativa internacional a mixes locales para licitaciones con meta de carbono.",
+    "materialIds": [
+      "mat-005",
+      "mat-011",
+      "mat-022"
+    ],
+    "logo": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80",
+    "certificaciones": [
+      "GCCA",
+      "CSC",
+      "EPD",
+      "ISO 14001",
+      "Vertua"
+    ],
+    "contacto": {
+      "telefono": "+52 81 8888-8888",
+      "email": "contacto@cemex.com",
+      "web": "https://www.cemex.com/"
+    },
+    "sostenibilidadScore": 72,
+    "anioFundacion": 1906,
+    "empleados": "43,000+"
+  },
+  {
+    "id": "prov-internacional-06",
+    "nombre": "Kingspan",
+    "tipo": "internacional",
+    "pais": "Irlanda",
+    "ciudad": "Kingscourt",
+    "ranking": 90,
+    "especialidad": "Paneles aislantes QuadCore, Kooltherm y cubiertas",
+    "descripcion": "Paneles sándwich y aislamiento rígido de alto R-value. QuadCore (KS Series, Optimo, Designwall) con EPDs de planta; K-Roc HF ignífugo. Certificaciones SCS y transparencia de producto.",
+    "materialIds": [
+      "mat-058"
+    ],
+    "logo": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+    "certificaciones": [
+      "EPD (SCS)",
+      "FM Approved",
+      "LEED",
+      "BREEAM"
+    ],
+    "contacto": {
+      "telefono": "+353 42 969 8000",
+      "email": "info@kingspan.com",
+      "web": "https://www.kingspan.com/"
+    },
+    "sostenibilidadScore": 80,
+    "anioFundacion": 1966,
+    "empleados": "22,000+"
+  },
+  {
+    "id": "prov-internacional-07",
+    "nombre": "ROCKWOOL",
+    "tipo": "internacional",
+    "pais": "Dinamarca",
+    "ciudad": "Hedehusene",
+    "ranking": 91,
+    "especialidad": "Lana de roca para aislamiento térmico, acústico y fuego",
+    "descripcion": "Aislamiento de lana de roca reciclable, incombustible (Euroclass A1). Circulación de residuo de lana y alta durabilidad. Ideal para envolventes en clima tropical con masa y fuego.",
+    "materialIds": [
+      "mat-057"
+    ],
+    "logo": "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?auto=format&fit=crop&w=1400&q=80",
+    "certificaciones": [
+      "EUCEB",
+      "EPD",
+      "Euroclass A1",
+      "ISO 14001"
+    ],
+    "contacto": {
+      "telefono": "+45 46 56 03 00",
+      "email": "info@rockwool.com",
+      "web": "https://www.rockwool.com/"
+    },
+    "sostenibilidadScore": 85,
+    "anioFundacion": 1909,
+    "empleados": "12,000+"
+  },
+  {
+    "id": "prov-internacional-08",
+    "nombre": "Tarkett",
+    "tipo": "internacional",
+    "pais": "Francia",
+    "ciudad": "Paris La Défense",
+    "ranking": 89,
+    "especialidad": "Pisos vinílicos, linóleo y soluciones de economía circular",
+    "descripcion": "Pisos comerciales con programa ReStart de recolección. Vinílicos de bajo ftalato, linóleo y superficies con contenido reciclado. Enfoque Cradle to Cradle y transparencia de materiales.",
+    "materialIds": [
+      "mat-054",
+      "mat-063"
+    ],
+    "logo": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=80",
+    "certificaciones": [
+      "Cradle to Cradle",
+      "FloorScore",
+      "EPD",
+      "ReStart"
+    ],
+    "contacto": {
+      "telefono": "+33 1 41 20 67 40",
+      "email": "communication@tarkett.com",
+      "web": "https://www.tarkett.com/"
+    },
+    "sostenibilidadScore": 84,
+    "anioFundacion": 1886,
+    "empleados": "12,000+"
+  },
+  {
+    "id": "prov-internacional-09",
+    "nombre": "Wienerberger",
+    "tipo": "internacional",
+    "pais": "Austria",
+    "ciudad": "Viena",
+    "ranking": 88,
+    "especialidad": "Bloque cerámico Porotherm, teja de arcilla y pavimentos",
+    "descripcion": "Líder europeo en cerámica de construcción. Porotherm (mampostería aligerada de alta inercia), teja cocida reutilizable y adoquín cerámico. Bajo mantenimiento y vida útil secular.",
+    "materialIds": [
+      "mat-027",
+      "mat-030",
+      "mat-066"
+    ],
+    "logo": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80",
+    "certificaciones": [
+      "EPD",
+      "natureplus",
+      "ISO 14001",
+      "Ceramics PEF"
+    ],
+    "contacto": {
+      "telefono": "+43 1 601 92-0",
+      "email": "office@wienerberger.com",
+      "web": "https://www.wienerberger.com/"
+    },
+    "sostenibilidadScore": 77,
+    "anioFundacion": 1819,
+    "empleados": "19,000+"
+  },
+  {
+    "id": "prov-internacional-10",
+    "nombre": "Hempitecture",
+    "tipo": "internacional",
+    "pais": "Estados Unidos",
+    "ciudad": "Ketchum",
+    "ranking": 85,
+    "especialidad": "HempWool, hempcrete y aislantes bio-based de cáñamo",
+    "descripcion": "Materiales de cáñamo industrial: HempWool (aislante vegetal) y mezclas de hempcrete para muros de alta masa y secuestro de carbono. Complementa bambú, tierra comprimida y madera FSC en proyectos regenerativos.",
+    "materialIds": [
+      "mat-053",
+      "mat-059",
+      "mat-060"
+    ],
+    "logo": "https://images.unsplash.com/photo-1466692476866-aef57cc18fbb?auto=format&fit=crop&w=1400&q=80",
+    "certificaciones": [
+      "Declare Red List Free",
+      "CDPH",
+      "ASTM hempcrete pilots"
+    ],
+    "contacto": {
+      "telefono": "+1 208-266-0310",
+      "email": "hello@hempitecture.com",
+      "web": "https://www.hempitecture.com/"
+    },
+    "sostenibilidadScore": 96,
+    "anioFundacion": 2018,
+    "empleados": "25-50"
+  }
+]

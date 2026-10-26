@@ -1,0 +1,1936 @@
+[
+  {
+    "id": "mat-001",
+    "nombre": "Cemento hidráulico gris tipo UGC 42,5 kg",
+    "categoria": "Cementos",
+    "sostenibilidad": 38,
+    "descripcion": "Cemento hidráulico de uso general (canasta INE IPMC). Precio de referencia del listado Construguate enero 2025 (C43). Base de mezclas convencionales en Guatemala.",
+    "especificaciones": [
+      "Saco 42,5 kg",
+      "Tipo UGC / uso general",
+      "NTG 41095 / ASTM C1157"
+    ],
+    "unidad": "saco 42,5 kg",
+    "precioReferencia": 78.12,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "NTG 41095",
+      "ASTM C1157"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1517581178692-ce968cecc38b?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-01",
+      "prov-nacional-02"
+    ],
+    "huellaCarbono": "820 kg CO2e/t",
+    "reciclable": false,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-002",
+    "nombre": "Cemento blanco hidráulico tipo BL",
+    "categoria": "Cementos",
+    "sostenibilidad": 34,
+    "descripcion": "Cemento blanco de la canasta INE (IPMC junio 2026). Usado en acabados arquitectónicos y terrazos.",
+    "especificaciones": [
+      "Saco 42,5 kg",
+      "Tipo BL",
+      "Color blanco estable"
+    ],
+    "unidad": "saco 42,5 kg",
+    "precioReferencia": 145.0,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "NTG 41095"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1517581178692-ce968cecc38b?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-01"
+    ],
+    "huellaCarbono": "980 kg CO2e/t",
+    "reciclable": false,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-003",
+    "nombre": "Holcim Fuerte 4060 PSI",
+    "categoria": "Cementos",
+    "sostenibilidad": 44,
+    "descripcion": "Cemento de uso general Holcim Guatemala. Resistencia >4060 PSI a 28 días. Ficha oficial ASTM C-1157 y NTG 41095.",
+    "especificaciones": [
+      ">4060 PSI a 28 días",
+      "ASTM C-1157",
+      "NTG 41095",
+      "Concreto y albañilería"
+    ],
+    "unidad": "saco 42,5 kg",
+    "precioReferencia": 82.5,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM C-1157",
+      "NTG 41095"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-02"
+    ],
+    "huellaCarbono": "740 kg CO2e/t",
+    "reciclable": false,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-004",
+    "nombre": "Holcim Super Resistente 5800 PSI",
+    "categoria": "Cementos",
+    "sostenibilidad": 42,
+    "descripcion": "Alta resistencia inicial para estructurales y prefabricados. >5800 PSI a 28 días.",
+    "especificaciones": [
+      ">5800 PSI a 28 días",
+      "Alta resistencia inicial",
+      "ASTM C-1157",
+      "NTG 41095"
+    ],
+    "unidad": "saco 42,5 kg",
+    "precioReferencia": 96.0,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM C-1157",
+      "NTG 41095"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-02",
+      "prov-nacional-04"
+    ],
+    "huellaCarbono": "790 kg CO2e/t",
+    "reciclable": false,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-005",
+    "nombre": "Cemento de baja huella (clínker reducido / Vertua-class)",
+    "categoria": "Cementos",
+    "sostenibilidad": 78,
+    "descripcion": "Cemento con adiciones (puzolana, escoria o caliza) para bajar kg CO2e/t respecto al UGC convencional. Línea tipo Vertua CEMEX y hojas de ruta GCCA de Progreso/Holcim.",
+    "especificaciones": [
+      "Reducción 30–50% CO2e vs OPC",
+      "Adiciones puzolánicas",
+      "EPD de producto"
+    ],
+    "unidad": "saco 42,5 kg",
+    "precioReferencia": 92.0,
+    "moneda": "GTQ",
+    "origen": "internacional",
+    "certificaciones": [
+      "EPD",
+      "GCCA",
+      "Vertua"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-internacional-05",
+      "prov-nacional-01",
+      "prov-nacional-02"
+    ],
+    "huellaCarbono": "420 kg CO2e/t",
+    "reciclable": false,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-006",
+    "nombre": "Cal hidratada Horcalsa (bolsa 50 lb)",
+    "categoria": "Cementos",
+    "sostenibilidad": 71,
+    "descripcion": "Cal hidratada de Progreso/Horcalsa. INE IPMC y Construguate C48. Estabiliza BTC, revoques transpirables y mezclas asfálticas (uso validado en carreteras GT).",
+    "especificaciones": [
+      "Bolsa 50 lb",
+      "Revoque y BTC",
+      "Mezclas asfálticas"
+    ],
+    "unidad": "bolsa 50 lb",
+    "precioReferencia": 33.4,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM C207",
+      "NTG"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-01"
+    ],
+    "huellaCarbono": "0.75 kg CO2e/kg",
+    "reciclable": false,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-007",
+    "nombre": "Concreto premezclado 2,500 PSI",
+    "categoria": "Cementos",
+    "sostenibilidad": 28,
+    "descripcion": "Mix convencional puesto en obra. Precio Construguate enero 2025 C49.",
+    "especificaciones": [
+      "2,500 PSI",
+      "Puesto en obra",
+      "ASTM C94"
+    ],
+    "unidad": "m³",
+    "precioReferencia": 1114.9,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM C94"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-03",
+      "prov-nacional-02"
+    ],
+    "huellaCarbono": "280 kg CO2e/m³",
+    "reciclable": false,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-008",
+    "nombre": "Concreto premezclado 3,500 PSI",
+    "categoria": "Cementos",
+    "sostenibilidad": 30,
+    "descripcion": "Uso estructural habitual en edificación media. C50 Construguate.",
+    "especificaciones": [
+      "3,500 PSI",
+      "Puesto en obra",
+      "Revenimiento controlado"
+    ],
+    "unidad": "m³",
+    "precioReferencia": 1186.82,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM C94",
+      "NTG 41017"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-03",
+      "prov-nacional-02"
+    ],
+    "huellaCarbono": "310 kg CO2e/m³",
+    "reciclable": false,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-009",
+    "nombre": "Concreto premezclado 4,000 PSI",
+    "categoria": "Cementos",
+    "sostenibilidad": 32,
+    "descripcion": "C51 Construguate. Columnas, losas y naves.",
+    "especificaciones": [
+      "4,000 PSI",
+      "Puesto en obra"
+    ],
+    "unidad": "m³",
+    "precioReferencia": 1238.59,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM C94"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-03"
+    ],
+    "huellaCarbono": "330 kg CO2e/m³",
+    "reciclable": false,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-010",
+    "nombre": "Concreto premezclado 5,000 PSI",
+    "categoria": "Cementos",
+    "sostenibilidad": 33,
+    "descripcion": "C52 Construguate. Alta resistencia para gran altura y prefabricados.",
+    "especificaciones": [
+      "5,000 PSI",
+      "Puesto en obra"
+    ],
+    "unidad": "m³",
+    "precioReferencia": 1351.98,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM C94"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-03",
+      "prov-nacional-04"
+    ],
+    "huellaCarbono": "360 kg CO2e/m³",
+    "reciclable": false,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-011",
+    "nombre": "Concreto bajo carbono (tipo ECOPact / Vertua)",
+    "categoria": "Cementos",
+    "sostenibilidad": 76,
+    "descripcion": "Concreto con cementos de clínker reducido y, cuando aplica, áridos reciclados. Meta 30% menos CO2e vs mix 28 MPa local.",
+    "especificaciones": [
+      "Clase 28–35 MPa",
+      "EPD de mix",
+      "Áridos locales"
+    ],
+    "unidad": "m³",
+    "precioReferencia": 1420.0,
+    "moneda": "GTQ",
+    "origen": "internacional",
+    "certificaciones": [
+      "EPD",
+      "CSC",
+      "Vertua"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-internacional-05",
+      "prov-nacional-02",
+      "prov-nacional-03"
+    ],
+    "huellaCarbono": "180 kg CO2e/m³",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-012",
+    "nombre": "Arena de río",
+    "categoria": "Agregados",
+    "sostenibilidad": 36,
+    "descripcion": "Agregado fino INE/Construguate C44. Extracción de cauce; impacto en lechos. Preferir fuentes con plan de manejo.",
+    "especificaciones": [
+      "m³ puesto en obra",
+      "Lavada",
+      "Módulo de finura 2.3–3.1"
+    ],
+    "unidad": "m³",
+    "precioReferencia": 160.45,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM C33"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-01",
+      "prov-nacional-03"
+    ],
+    "huellaCarbono": "8 kg CO2e/m³",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-013",
+    "nombre": "Arena amarilla",
+    "categoria": "Agregados",
+    "sostenibilidad": 34,
+    "descripcion": "C45 Construguate / INE IPMC. Repellos y morteros.",
+    "especificaciones": [
+      "m³ puesto en obra",
+      "Granulometría para revoque"
+    ],
+    "unidad": "m³",
+    "precioReferencia": 156.1,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM C144"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-01"
+    ],
+    "huellaCarbono": "9 kg CO2e/m³",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-014",
+    "nombre": "Piedrín 1/2\"–3/4\"",
+    "categoria": "Agregados",
+    "sostenibilidad": 35,
+    "descripcion": "Agregado grueso C47. Cantera de Agregados de Guatemala / Progreso.",
+    "especificaciones": [
+      "3/8 a 3/4 pulg",
+      "m³ en obra"
+    ],
+    "unidad": "m³",
+    "precioReferencia": 257.75,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM C33"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-01",
+      "prov-nacional-03"
+    ],
+    "huellaCarbono": "12 kg CO2e/m³",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-015",
+    "nombre": "Árido reciclado de demolición (RCA)",
+    "categoria": "Agregados",
+    "sostenibilidad": 82,
+    "descripcion": "Concreto triturado para sub-bases y mixes no estructurales. Reduce extracción de río.",
+    "especificaciones": [
+      "Fracción 5–20 mm",
+      "Contaminantes <1%",
+      "Uso en sub-base y concreto no estructural"
+    ],
+    "unidad": "m³",
+    "precioReferencia": 145.0,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM C33 (parcial)",
+      "Guía RCA"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-03",
+      "prov-nacional-04"
+    ],
+    "huellaCarbono": "4 kg CO2e/m³",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-016",
+    "nombre": "Varilla corrugada 3/8\" grado 40 × 20'",
+    "categoria": "Acero",
+    "sostenibilidad": 40,
+    "descripcion": "Hierro de refuerzo canasta INE / C1 Construguate. Precio Q 389.52 / quintal (ene 2025).",
+    "especificaciones": [
+      "Grado 40",
+      "3/8 pulg × 20 pies",
+      "NTG 36011"
+    ],
+    "unidad": "quintal",
+    "precioReferencia": 389.52,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM A615 G40",
+      "NTG 36011"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1504307651254-35680f356248?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-06"
+    ],
+    "huellaCarbono": "1.9 t CO2e/t",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-017",
+    "nombre": "Varilla corrugada 3/8\" grado 60 × 20'",
+    "categoria": "Acero",
+    "sostenibilidad": 42,
+    "descripcion": "C2 Construguate Q 454.96 / quintal. Estructural habitual.",
+    "especificaciones": [
+      "Grado 60",
+      "3/8 pulg × 20 pies",
+      "Corrugado legítimo"
+    ],
+    "unidad": "quintal",
+    "precioReferencia": 454.96,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM A615 G60"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1504307651254-35680f356248?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-06"
+    ],
+    "huellaCarbono": "1.85 t CO2e/t",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-018",
+    "nombre": "Alambre de amarre calibre 16",
+    "categoria": "Acero",
+    "sostenibilidad": 38,
+    "descripcion": "C10 Construguate / INE. Q 633.46 / quintal.",
+    "especificaciones": [
+      "Calibre 16",
+      "Quintal"
+    ],
+    "unidad": "quintal",
+    "precioReferencia": 633.46,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM A82"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-06"
+    ],
+    "huellaCarbono": "2.1 t CO2e/t",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-019",
+    "nombre": "Malla electrosoldada 6×6-6/6",
+    "categoria": "Acero",
+    "sostenibilidad": 44,
+    "descripcion": "Malla grado 70 INE. C21 Construguate plancha 6×6-6/6.",
+    "especificaciones": [
+      "6×6-6/6",
+      "Grado 70",
+      "Plancha"
+    ],
+    "unidad": "plancha",
+    "precioReferencia": 326.37,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM A185"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-06"
+    ],
+    "huellaCarbono": "1.8 t CO2e/t",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-020",
+    "nombre": "Angular laminado 1/8\" × 1 1/4\" × 20'",
+    "categoria": "Acero",
+    "sostenibilidad": 41,
+    "descripcion": "Perfil para estructuras ligeras. C36 Construguate.",
+    "especificaciones": [
+      "1/8 × 1 1/4 pulg",
+      "20 pies",
+      "Laminado en frío"
+    ],
+    "unidad": "unidad",
+    "precioReferencia": 139.71,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM A36"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1504307651254-35680f356248?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-06"
+    ],
+    "huellaCarbono": "1.9 t CO2e/t",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-021",
+    "nombre": "Lámina negra 4'×8'×1/16\"",
+    "categoria": "Acero",
+    "sostenibilidad": 39,
+    "descripcion": "C40 Construguate. Plancha para calderería y cubiertas temporales.",
+    "especificaciones": [
+      "4×8 pies",
+      "1/16 pulg"
+    ],
+    "unidad": "unidad",
+    "precioReferencia": 458.36,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM A1011"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-06"
+    ],
+    "huellaCarbono": "2.2 t CO2e/t",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-022",
+    "nombre": "Acero estructural con contenido reciclado (EAF)",
+    "categoria": "Acero",
+    "sostenibilidad": 79,
+    "descripcion": "Perfiles y placa de horno eléctrico con 70–90% chatarra. Menor huella que BOF. Montaje Aceros Tonca.",
+    "especificaciones": [
+      "70–90% chatarra",
+      "EAF",
+      "Trazabilidad de mill"
+    ],
+    "unidad": "t",
+    "precioReferencia": 7200.0,
+    "moneda": "GTQ",
+    "origen": "internacional",
+    "certificaciones": [
+      "EPD",
+      "LEED MRC",
+      "ISO 14001"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-06",
+      "prov-internacional-05"
+    ],
+    "huellaCarbono": "0.6 t CO2e/t",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-023",
+    "nombre": "Block de pómez 14×19×39 cm",
+    "categoria": "Mampostería",
+    "sostenibilidad": 51,
+    "descripcion": "Block liviano INE (25 kg). Millar Construguate tipo liviano 14×19×39 C60.",
+    "especificaciones": [
+      "14×19×39 cm",
+      "Pómez",
+      "≈25 kg"
+    ],
+    "unidad": "millar",
+    "precioReferencia": 3737.93,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM C90",
+      "NTG 41054"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1464146072230-91cabc968266?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-05"
+    ],
+    "huellaCarbono": "1.4 kg CO2e/pieza",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-024",
+    "nombre": "Block de concreto 15×20×40 cm",
+    "categoria": "Mampostería",
+    "sostenibilidad": 22,
+    "descripcion": "C57 Construguate millar Q 4,592.62. Convencional de alta masa.",
+    "especificaciones": [
+      "15×20×40 cm",
+      "Concreto",
+      "Hueco"
+    ],
+    "unidad": "millar",
+    "precioReferencia": 4592.62,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM C90"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1464146072230-91cabc968266?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-05"
+    ],
+    "huellaCarbono": "2.1 kg CO2e/pieza",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-025",
+    "nombre": "Block de concreto 20×20×40 cm",
+    "categoria": "Mampostería",
+    "sostenibilidad": 20,
+    "descripcion": "C56 Construguate.",
+    "especificaciones": [
+      "20×20×40 cm"
+    ],
+    "unidad": "millar",
+    "precioReferencia": 5988.1,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM C90"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-05"
+    ],
+    "huellaCarbono": "2.6 kg CO2e/pieza",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-026",
+    "nombre": "Adoquín de concreto 10×22×24 cm",
+    "categoria": "Mampostería",
+    "sostenibilidad": 33,
+    "descripcion": "C66 Construguate. Pavimentos peatonales y vehiculares livianos.",
+    "especificaciones": [
+      "10×22×24 cm",
+      "Concreto"
+    ],
+    "unidad": "millar",
+    "precioReferencia": 5474.09,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM C936"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-05",
+      "prov-nacional-04"
+    ],
+    "huellaCarbono": "1.8 kg CO2e/pieza",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-027",
+    "nombre": "Ladrillo tubular 6,5×11×23 cm",
+    "categoria": "Mampostería",
+    "sostenibilidad": 46,
+    "descripcion": "Arcilla cocida C68. Mejor inercia que block de concreto en muros delgados.",
+    "especificaciones": [
+      "6,5×11×23 cm",
+      "Tubular"
+    ],
+    "unidad": "millar",
+    "precioReferencia": 3093.78,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "NTG ladrillo"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1464146072230-91cabc968266?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-05",
+      "prov-internacional-09"
+    ],
+    "huellaCarbono": "0.55 kg CO2e/pieza",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-028",
+    "nombre": "Bloque de tierra comprimida (BTC) estabilizado con cal",
+    "categoria": "Bio-based",
+    "sostenibilidad": 94,
+    "descripcion": "Mampostería de tierra local con 5–8% cal Horcalsa. Sin cocción. Alta masa térmica para altiplano y valles.",
+    "especificaciones": [
+      "Estabilizado 5–8% cal",
+      "Producción en sitio o planta",
+      "Revoque de cal"
+    ],
+    "unidad": "pieza",
+    "precioReferencia": 8.5,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "GGBC piloto",
+      "Norma BTC LatAm"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-01",
+      "prov-nacional-05"
+    ],
+    "huellaCarbono": "0.4 kg CO2e/pieza",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-029",
+    "nombre": "Adobe estabilizado de valle central",
+    "categoria": "Bio-based",
+    "sostenibilidad": 90,
+    "descripcion": "Adobe de tierra, paja y cal. Tradición guatemalteca con aleros y sobrecimiento. Huella mínima si la tierra es de excavación.",
+    "especificaciones": [
+      "Tierra + paja + cal",
+      "Secado solar",
+      "Requiere alero"
+    ],
+    "unidad": "pieza",
+    "precioReferencia": 6.0,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "Ficha técnica GGBC"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-01"
+    ],
+    "huellaCarbono": "0.25 kg CO2e/pieza",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-030",
+    "nombre": "Porotherm (bloque cerámico aligerado)",
+    "categoria": "Mampostería",
+    "sostenibilidad": 73,
+    "descripcion": "Mampostería Wienerberger de arcilla aligerada. Inercia y aislamiento combinados; menos puentes térmicos que block macizo.",
+    "especificaciones": [
+      "Arcilla aligerada",
+      "EPD",
+      "Revoque compatible"
+    ],
+    "unidad": "m² de muro",
+    "precioReferencia": 28.0,
+    "moneda": "USD",
+    "origen": "internacional",
+    "certificaciones": [
+      "EPD",
+      "natureplus"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-internacional-09"
+    ],
+    "huellaCarbono": "12 kg CO2e/m² muro",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-031",
+    "nombre": "Muro prefabricado de concreto 5 cm",
+    "categoria": "Mampostería",
+    "sostenibilidad": 40,
+    "descripcion": "INE: 315 kg/cm², liso ambas caras. PRECON. Acelera obra y reduce formaleta de madera.",
+    "especificaciones": [
+      "5 cm",
+      "315 kg/cm²",
+      "Doble cara lisa"
+    ],
+    "unidad": "m²",
+    "precioReferencia": 185.0,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "NTG prefabricados"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-04"
+    ],
+    "huellaCarbono": "28 kg CO2e/m²",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-032",
+    "nombre": "Tubo de concreto 18\" sin refuerzo",
+    "categoria": "Hidrosanitario",
+    "sostenibilidad": 37,
+    "descripcion": "C82 Construguate. Drenaje pluvial municipal.",
+    "especificaciones": [
+      "18 pulg DI",
+      "Sin refuerzo",
+      "1 m típico"
+    ],
+    "unidad": "unidad",
+    "precioReferencia": 140.55,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM C14"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-04"
+    ],
+    "huellaCarbono": "45 kg CO2e/pieza",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-033",
+    "nombre": "Tubo de concreto reforzado 42\"",
+    "categoria": "Hidrosanitario",
+    "sostenibilidad": 36,
+    "descripcion": "C87 Construguate Q 1,229.86. Colectores.",
+    "especificaciones": [
+      "42 pulg DI",
+      "Reforzado"
+    ],
+    "unidad": "unidad",
+    "precioReferencia": 1229.86,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM C76"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-04"
+    ],
+    "huellaCarbono": "180 kg CO2e/pieza",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-034",
+    "nombre": "Poste de concreto 6 m 300 daN",
+    "categoria": "Eléctrico",
+    "sostenibilidad": 34,
+    "descripcion": "INE materiales varios. Electrificación rural.",
+    "especificaciones": [
+      "6 m",
+      "300 daN"
+    ],
+    "unidad": "unidad",
+    "precioReferencia": 1850.0,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM C1089"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-04"
+    ],
+    "huellaCarbono": "220 kg CO2e/pieza",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-035",
+    "nombre": "Tubería PVC 1/2\" 315 PSI",
+    "categoria": "Hidrosanitario",
+    "sostenibilidad": 33,
+    "descripcion": "C109 Construguate. Agua potable ramales.",
+    "especificaciones": [
+      "1/2 pulg",
+      "315 PSI",
+      "ASTM D1785"
+    ],
+    "unidad": "unidad (20')",
+    "precioReferencia": 27.54,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "NSF",
+      "ASTM D1785"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-07"
+    ],
+    "huellaCarbono": "2.8 kg CO2e/tubo",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-036",
+    "nombre": "Tubería PVC 1\" C-250 PSI × 20'",
+    "categoria": "Hidrosanitario",
+    "sostenibilidad": 34,
+    "descripcion": "INE instalaciones de agua. Durman.",
+    "especificaciones": [
+      "1 pulg",
+      "250 PSI",
+      "20 pies"
+    ],
+    "unidad": "unidad",
+    "precioReferencia": 68.0,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "NSF",
+      "NTG 29001"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-07"
+    ],
+    "huellaCarbono": "5.2 kg CO2e/tubo",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-037",
+    "nombre": "Poliducto 3/4\" rollo 300 pies",
+    "categoria": "Eléctrico",
+    "sostenibilidad": 31,
+    "descripcion": "C125 Construguate. Canalización eléctrica.",
+    "especificaciones": [
+      "3/4 pulg",
+      "300 pies"
+    ],
+    "unidad": "rollo",
+    "precioReferencia": 219.65,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "UL / NTG eléctrico"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-07"
+    ],
+    "huellaCarbono": "8.5 kg CO2e/rollo",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-038",
+    "nombre": "Tubería PEAD para agua potable",
+    "categoria": "Hidrosanitario",
+    "sostenibilidad": 58,
+    "descripcion": "Polietileno de alta densidad Durman/Aliaxis. Menos fugas y vida útil larga vs hierro galvanizado.",
+    "especificaciones": [
+      "PE100",
+      "SDR 11–17",
+      "Fusión a tope"
+    ],
+    "unidad": "m",
+    "precioReferencia": 42.0,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ISO 4427",
+      "NSF"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-07"
+    ],
+    "huellaCarbono": "2.1 kg CO2e/m",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-039",
+    "nombre": "Tinaco 1,100 litros",
+    "categoria": "Hidrosanitario",
+    "sostenibilidad": 70,
+    "descripcion": "C197 Construguate Q 1,459.45. Almacenamiento y apoyo a cosecha de lluvia.",
+    "especificaciones": [
+      "1,100 L",
+      "Polietileno rotomoldeado",
+      "Tapa sanitaria"
+    ],
+    "unidad": "unidad",
+    "precioReferencia": 1459.45,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "NSF/ANSI 61"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-10"
+    ],
+    "huellaCarbono": "38 kg CO2e/unidad",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-040",
+    "nombre": "Sistema de cosecha de agua de lluvia (cisterna + filtros)",
+    "categoria": "Hidrosanitario",
+    "sostenibilidad": 92,
+    "descripcion": "Paquete Rotoplas: captación de cubierta, primeros lavados, filtro y tinaco/cisterna. Reduce demanda de red y pozo.",
+    "especificaciones": [
+      "Filtro de hojas",
+      "First flush",
+      "Cisterna 1,100–5,000 L"
+    ],
+    "unidad": "sistema",
+    "precioReferencia": 4850.0,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "NSF",
+      "ARCSA prácticas"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-10",
+      "prov-nacional-07"
+    ],
+    "huellaCarbono": "55 kg CO2e/sistema",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-041",
+    "nombre": "Biodigestor prefabricado vivienda",
+    "categoria": "Hidrosanitario",
+    "sostenibilidad": 88,
+    "descripcion": "Saneamiento descentralizado Rotoplas para rural y periurbano. Sustituye fosas no selladas.",
+    "especificaciones": [
+      "Vivienda 5–8 usuarios",
+      "Efluente para riego restringido"
+    ],
+    "unidad": "unidad",
+    "precioReferencia": 6200.0,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "NOM / ficha sanitaria"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-10"
+    ],
+    "huellaCarbono": "70 kg CO2e/unidad",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-042",
+    "nombre": "Piso cerámico nacional 33×33 cm",
+    "categoria": "Cerámica",
+    "sostenibilidad": 40,
+    "descripcion": "Canasta INE pisos. Samboro producción local.",
+    "especificaciones": [
+      "33×33 cm",
+      "Esmaltado",
+      "PEI 3–4"
+    ],
+    "unidad": "m²",
+    "precioReferencia": 68.0,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ISO 13006",
+      "NTG 41007"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-08"
+    ],
+    "huellaCarbono": "8.5 kg CO2e/m²",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-043",
+    "nombre": "Porcelanato 60×60 cm nacional",
+    "categoria": "Cerámica",
+    "sostenibilidad": 43,
+    "descripcion": "INE porcelanato blanco. Baja absorción, alta durabilidad.",
+    "especificaciones": [
+      "60×60 cm",
+      "Absorción <0.5%",
+      "Rectificado"
+    ],
+    "unidad": "m²",
+    "precioReferencia": 95.0,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ISO 13006 Gres porcelánico"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-08"
+    ],
+    "huellaCarbono": "11 kg CO2e/m²",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-044",
+    "nombre": "Azulejo 20×30 cm nacional blanco",
+    "categoria": "Cerámica",
+    "sostenibilidad": 41,
+    "descripcion": "INE azulejo. Muros húmedos.",
+    "especificaciones": [
+      "20×30 cm",
+      "Blanco brillante"
+    ],
+    "unidad": "m²",
+    "precioReferencia": 52.0,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ISO 10545"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-08"
+    ],
+    "huellaCarbono": "7.2 kg CO2e/m²",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-045",
+    "nombre": "Inodoro de porcelana económico",
+    "categoria": "Hidrosanitario",
+    "sostenibilidad": 48,
+    "descripcion": "INE accesorios de baño / C114 Construguate Hydra 551. Dual flush preferible en especificación sostenible.",
+    "especificaciones": [
+      "Porcelana blanca",
+      "Con accesorios",
+      "4.8–6 L/descarga"
+    ],
+    "unidad": "unidad",
+    "precioReferencia": 825.0,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "WaterSense equivalente",
+      "NMX sanitaria"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-08",
+      "prov-nacional-10"
+    ],
+    "huellaCarbono": "85 kg CO2e/unidad",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-046",
+    "nombre": "Adhesivo para cerámica CEMIX / Samboro",
+    "categoria": "Acabados",
+    "sostenibilidad": 45,
+    "descripcion": "Mortero adhesivo C2. Compatible con porcelanato.",
+    "especificaciones": [
+      "C2TE",
+      "Saco 20–25 kg",
+      "ANSI A118.4"
+    ],
+    "unidad": "saco 25 kg",
+    "precioReferencia": 78.0,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ANSI A118",
+      "GreenGuard"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-09",
+      "prov-nacional-08"
+    ],
+    "huellaCarbono": "6.5 kg CO2e/saco",
+    "reciclable": false,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-047",
+    "nombre": "Mortero de pega / repello 30 kg",
+    "categoria": "Acabados",
+    "sostenibilidad": 36,
+    "descripcion": "C53 Construguate Q 53.14. Tector Holcim o CEMIX.",
+    "especificaciones": [
+      "30 kg",
+      "Repello"
+    ],
+    "unidad": "saco 30 kg",
+    "precioReferencia": 53.14,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "NTG morteros"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-09",
+      "prov-nacional-02"
+    ],
+    "huellaCarbono": "9.2 kg CO2e/saco",
+    "reciclable": false,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-048",
+    "nombre": "Pintura látex interior de primera (galón)",
+    "categoria": "Acabados",
+    "sostenibilidad": 24,
+    "descripcion": "INE pintura látex / C198–C199 Construguate (hule). VOC medio-alto típico nacional.",
+    "especificaciones": [
+      "Galón",
+      "Interior",
+      "Lavable"
+    ],
+    "unidad": "galón",
+    "precioReferencia": 327.59,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "COGUANOR pintura"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-09"
+    ],
+    "huellaCarbono": "3.6 kg CO2e/L",
+    "reciclable": false,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-049",
+    "nombre": "Pintura anticorrosiva estructural",
+    "categoria": "Acabados",
+    "sostenibilidad": 22,
+    "descripcion": "C202 Construguate Q 325.42. Protección de acero Tonca.",
+    "especificaciones": [
+      "Galón",
+      "Secado normal",
+      "Nacional"
+    ],
+    "unidad": "galón",
+    "precioReferencia": 325.42,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "SSPC"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-06",
+      "prov-nacional-09"
+    ],
+    "huellaCarbono": "4.1 kg CO2e/L",
+    "reciclable": false,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-050",
+    "nombre": "Pintura mineral de silicato (bajo VOC)",
+    "categoria": "Acabados",
+    "sostenibilidad": 87,
+    "descripcion": "Pintura mineral transpirable, VOC <1 g/L. Alternativa a vinílicas. Importación Saint-Gobain Weber / líneas minerales.",
+    "especificaciones": [
+      "VOC <1 g/L",
+      "Permeable al vapor",
+      "Fachada e interior"
+    ],
+    "unidad": "L",
+    "precioReferencia": 18.5,
+    "moneda": "USD",
+    "origen": "internacional",
+    "certificaciones": [
+      "natureplus",
+      "EPD"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-internacional-01"
+    ],
+    "huellaCarbono": "1.1 kg CO2e/L",
+    "reciclable": false,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-051",
+    "nombre": "Madera de pino rústico (pie tabla)",
+    "categoria": "Madera",
+    "sostenibilidad": 55,
+    "descripcion": "C178 Construguate Q 17.18. Encofrados; preferir reúso y evitar teca ilegal.",
+    "especificaciones": [
+      "Pie tabla",
+      "Pino rústico",
+      "Aserradero"
+    ],
+    "unidad": "pie tabla",
+    "precioReferencia": 17.18,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "INAB guía de procedencia"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-01"
+    ],
+    "huellaCarbono": "−8 kg CO2e/pie tabla (almacenado, bruto)",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-052",
+    "nombre": "Pino de las Verapaces certificado FSC",
+    "categoria": "Madera",
+    "sostenibilidad": 88,
+    "descripcion": "Madera estructural de bosque manejado (cadena de custodia FSC). Sustituye pino rústico de procedencia dudosa. AgroProgreso / predios certificados.",
+    "especificaciones": [
+      "FSC 100% o Mix",
+      "Secado en horno",
+      "Grado #2"
+    ],
+    "unidad": "m³",
+    "precioReferencia": 3100.0,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "FSC",
+      "INAB"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-01"
+    ],
+    "huellaCarbono": "−420 kg CO2e/m³ (almacenado)",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-053",
+    "nombre": "Bambú guadua laminado estructural",
+    "categoria": "Bio-based",
+    "sostenibilidad": 92,
+    "descripcion": "Vigas y paneles de guadua. Impulso MAGA–Taiwán a la industria del bambú en Guatemala; cadena CA. Cosecha 4–6 años, alta relación resistencia/peso.",
+    "especificaciones": [
+      "Laminado estructural",
+      "Tratamiento borato",
+      "Cosecha 4–6 años"
+    ],
+    "unidad": "m³",
+    "precioReferencia": 4200.0,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ISO 22157",
+      "FSC Mix (si aplica)"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1590496793929-36417d3117de?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-01",
+      "prov-internacional-10"
+    ],
+    "huellaCarbono": "−180 kg CO2e/m³ (neto)",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-054",
+    "nombre": "Madera plástica reciclada (plastic lumber)",
+    "categoria": "Bio-based",
+    "sostenibilidad": 81,
+    "descripcion": "Perfiles de PE/PP reciclado para decks, bancas y pasarelas. No se pudre; fin de vida reciclable.",
+    "especificaciones": [
+      "PE reciclado",
+      "UV estabilizado",
+      "Perfil 2×6 equiv."
+    ],
+    "unidad": "m",
+    "precioReferencia": 95.0,
+    "moneda": "GTQ",
+    "origen": "internacional",
+    "certificaciones": [
+      "Recycled content 70%+",
+      "ICC-ES"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-10",
+      "prov-internacional-08"
+    ],
+    "huellaCarbono": "1.8 kg CO2e/m",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-055",
+    "nombre": "Tablero de yeso 4'×8'×1/2\" (Gyproc / equivalente)",
+    "categoria": "Aislantes",
+    "sostenibilidad": 48,
+    "descripcion": "INE madera y aglomerados — tablero de yeso interior. Saint-Gobain Gyproc o similar nacional.",
+    "especificaciones": [
+      "4×8 pies",
+      "1/2 pulg",
+      "Interior"
+    ],
+    "unidad": "unidad",
+    "precioReferencia": 95.0,
+    "moneda": "GTQ",
+    "origen": "internacional",
+    "certificaciones": [
+      "ASTM C1396",
+      "EPD Gyproc"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1484154214962-2d7eef3278e6?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-internacional-01",
+      "prov-internacional-02"
+    ],
+    "huellaCarbono": "6.8 kg CO2e/plancha",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-056",
+    "nombre": "Lana mineral Isover / Knauf ECOSE",
+    "categoria": "Aislantes",
+    "sostenibilidad": 86,
+    "descripcion": "Aislante de lana de vidrio con ECOSE (sin formaldehído). Alto R por pulgada; indoor air gold.",
+    "especificaciones": [
+      "λ ≈ 0.032–0.035 W/mK",
+      "ECOSE",
+      "Rollo o panel"
+    ],
+    "unidad": "m² (50 mm)",
+    "precioReferencia": 12.5,
+    "moneda": "USD",
+    "origen": "internacional",
+    "certificaciones": [
+      "EUCEB",
+      "Eurofins Gold",
+      "EPD",
+      "Declare"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1484154214962-2d7eef3278e6?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-internacional-01",
+      "prov-internacional-02"
+    ],
+    "huellaCarbono": "3.2 kg CO2e/m²",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-057",
+    "nombre": "Lana de roca ROCKWOOL",
+    "categoria": "Aislantes",
+    "sostenibilidad": 84,
+    "descripcion": "Incombustible A1, acústica y térmica. Reciclable al final de vida.",
+    "especificaciones": [
+      "Euroclass A1",
+      "λ ≈ 0.035 W/mK",
+      "Panel rígido"
+    ],
+    "unidad": "m² (50 mm)",
+    "precioReferencia": 14.0,
+    "moneda": "USD",
+    "origen": "internacional",
+    "certificaciones": [
+      "EUCEB",
+      "EPD",
+      "Euroclass A1"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-internacional-07"
+    ],
+    "huellaCarbono": "4.1 kg CO2e/m²",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-058",
+    "nombre": "Panel aislante Kingspan QuadCore",
+    "categoria": "Aislantes",
+    "sostenibilidad": 75,
+    "descripcion": "Panel sándwich alto R con EPD de planta. Naves, cámaras y fachadas ligeras.",
+    "especificaciones": [
+      "QuadCore",
+      "FM Approved",
+      "EPD SCS"
+    ],
+    "unidad": "m²",
+    "precioReferencia": 48.0,
+    "moneda": "USD",
+    "origen": "internacional",
+    "certificaciones": [
+      "EPD",
+      "FM",
+      "LEED"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-internacional-06"
+    ],
+    "huellaCarbono": "18 kg CO2e/m²",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-059",
+    "nombre": "HempWool (aislante de cáñamo)",
+    "categoria": "Bio-based",
+    "sostenibilidad": 95,
+    "descripcion": "Aislante vegetal Hempitecture. Regula humedad, sin retardantes halogenados, Declare Red List Free.",
+    "especificaciones": [
+      "R-3.5/pulg aprox.",
+      "Fibra de cáñamo",
+      "Red List Free"
+    ],
+    "unidad": "m² (50 mm)",
+    "precioReferencia": 16.0,
+    "moneda": "USD",
+    "origen": "internacional",
+    "certificaciones": [
+      "Declare Red List Free",
+      "CDPH"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1466692476866-aef57cc18fbb?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-internacional-10"
+    ],
+    "huellaCarbono": "0.4 kg CO2e/m²",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-060",
+    "nombre": "Hempcrete (cáñamo-cal) para muros",
+    "categoria": "Bio-based",
+    "sostenibilidad": 97,
+    "descripcion": "Mezcla de cañamiza y cal. Secuestra carbono, masa térmica y transpirabilidad. Pilotos ASTM.",
+    "especificaciones": [
+      "Cañamiza + cal",
+      "Muro 20–30 cm",
+      "No estructural (relleno)"
+    ],
+    "unidad": "m³",
+    "precioReferencia": 220.0,
+    "moneda": "USD",
+    "origen": "internacional",
+    "certificaciones": [
+      "Declare",
+      "ASTM hempcrete pilots"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-internacional-10",
+      "prov-nacional-01"
+    ],
+    "huellaCarbono": "−30 kg CO2e/m³ (neto)",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-061",
+    "nombre": "Loseta de alfombra Interface (carbon negative)",
+    "categoria": "Acabados",
+    "sostenibilidad": 93,
+    "descripcion": "Piso modular comercial con contenido reciclado y líneas de carbono negativo. Programa ReEntry.",
+    "especificaciones": [
+      "50×50 cm",
+      "Contenido reciclado alto",
+      "ReEntry"
+    ],
+    "unidad": "m²",
+    "precioReferencia": 32.0,
+    "moneda": "USD",
+    "origen": "internacional",
+    "certificaciones": [
+      "C2C",
+      "EPD",
+      "Declare",
+      "Carbon Negative"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-internacional-03"
+    ],
+    "huellaCarbono": "−0.3 kg CO2e/m² (línea CN)",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-062",
+    "nombre": "Linóleo Marmoleum Forbo",
+    "categoria": "Acabados",
+    "sostenibilidad": 94,
+    "descripcion": "Linóleo de aceite de linaza, harina de madera y yute. Colecciones Solid y Cocoa. Biobasado y circular.",
+    "especificaciones": [
+      "2.0–2.5 mm",
+      "Linaza + yute",
+      "Indoor Air Comfort Gold"
+    ],
+    "unidad": "m²",
+    "precioReferencia": 28.0,
+    "moneda": "USD",
+    "origen": "internacional",
+    "certificaciones": [
+      "Blue Angel",
+      "EPD",
+      "Indoor Air Comfort Gold"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1556912173-46c336c7fd55?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-internacional-04"
+    ],
+    "huellaCarbono": "0.6 kg CO2e/m²",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-063",
+    "nombre": "Piso vinílico circular Tarkett (ReStart)",
+    "categoria": "Acabados",
+    "sostenibilidad": 72,
+    "descripcion": "LVT/vinilo con ftalatos reducidos y retoma ReStart. Mejor que vinílico genérico INE, peor que linóleo.",
+    "especificaciones": [
+      "LVT",
+      "FloorScore",
+      "ReStart"
+    ],
+    "unidad": "m²",
+    "precioReferencia": 22.0,
+    "moneda": "USD",
+    "origen": "internacional",
+    "certificaciones": [
+      "FloorScore",
+      "C2C",
+      "ReStart"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-internacional-08"
+    ],
+    "huellaCarbono": "7.5 kg CO2e/m²",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-064",
+    "nombre": "Fibrolit / Plycem 4'×8'×8 mm",
+    "categoria": "Cubiertas",
+    "sostenibilidad": 58,
+    "descripcion": "Tablero de fibrocemento C74 Construguate Q 200.32. Cielos y fachadas; sin asbesto.",
+    "especificaciones": [
+      "4×8 pies",
+      "8 mm",
+      "Fibrocemento"
+    ],
+    "unidad": "unidad",
+    "precioReferencia": 200.32,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM C1186",
+      "Sin asbesto"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-02",
+      "prov-internacional-01"
+    ],
+    "huellaCarbono": "9.5 kg CO2e/plancha",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-065",
+    "nombre": "Lámina galvanizada calibre 26 (1.08 m)",
+    "categoria": "Cubiertas",
+    "sostenibilidad": 29,
+    "descripcion": "INE cubiertas. Acero galvanizado troquelado. Reciclable pero alta energía.",
+    "especificaciones": [
+      "Cal. 26",
+      "1.08 m ancho",
+      "Pie lineal"
+    ],
+    "unidad": "pie lineal",
+    "precioReferencia": 18.5,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM A653"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-06"
+    ],
+    "huellaCarbono": "2.4 kg CO2e/pie",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-066",
+    "nombre": "Teja de arcilla Wienerberger / equivalente local",
+    "categoria": "Cubiertas",
+    "sostenibilidad": 80,
+    "descripcion": "Teja cocida reutilizable, inercia bajo cubierta. Alternativa a lámina en vivienda.",
+    "especificaciones": [
+      "Arcilla cocida",
+      "Reutilizable pieza a pieza",
+      "EPD"
+    ],
+    "unidad": "m²",
+    "precioReferencia": 22.0,
+    "moneda": "USD",
+    "origen": "internacional",
+    "certificaciones": [
+      "EPD",
+      "Ceramics PEF"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-internacional-09"
+    ],
+    "huellaCarbono": "6 kg CO2e/m²",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-067",
+    "nombre": "Alambre THHN #12 rollo 100 m",
+    "categoria": "Eléctrico",
+    "sostenibilidad": 35,
+    "descripcion": "C138 Construguate Q 410.06. Instalación residencial.",
+    "especificaciones": [
+      "#12 THHN",
+      "100 m",
+      "Forrado"
+    ],
+    "unidad": "rollo",
+    "precioReferencia": 410.06,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "UL / NTG"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-07"
+    ],
+    "huellaCarbono": "12 kg CO2e/rollo",
+    "reciclable": true,
+    "destacadoSostenible": false
+  },
+  {
+    "id": "mat-068",
+    "nombre": "Módulo fotovoltaico 550 W (vidrio Saint-Gobain / silicio)",
+    "categoria": "Eléctrico",
+    "sostenibilidad": 83,
+    "descripcion": "Generación in situ para naves y vivienda. Vidrio de control y encapsulado de línea Saint-Gobain Solar.",
+    "especificaciones": [
+      "550 W",
+      "25–30 años",
+      "IEC 61215"
+    ],
+    "unidad": "módulo",
+    "precioReferencia": 145.0,
+    "moneda": "USD",
+    "origen": "internacional",
+    "certificaciones": [
+      "IEC 61215",
+      "IEC 61730"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-internacional-01"
+    ],
+    "huellaCarbono": "400 kg CO2e/kWp (payback 1–3 años)",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-069",
+    "nombre": "Lámpara LED listón 1×48\"",
+    "categoria": "Eléctrico",
+    "sostenibilidad": 74,
+    "descripcion": "INE lámpara listón LED. Sustituye fluorescente T8.",
+    "especificaciones": [
+      "1×48 pulg",
+      "LED",
+      "Empotrar o sobreponer"
+    ],
+    "unidad": "unidad",
+    "precioReferencia": 85.0,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "Energy Star equiv.",
+      "LM-79"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1484154214962-2d7eef3278e6?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-07"
+    ],
+    "huellaCarbono": "3.2 kg CO2e/unidad",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-070",
+    "nombre": "Vidrio claro 5 mm",
+    "categoria": "Acabados",
+    "sostenibilidad": 40,
+    "descripcion": "INE ventanas. Preferir DVH de Saint-Gobain en clima cálido.",
+    "especificaciones": [
+      "5 mm",
+      "Traslúcido",
+      "m²"
+    ],
+    "unidad": "m²",
+    "precioReferencia": 95.0,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM C1036"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-internacional-01"
+    ],
+    "huellaCarbono": "12 kg CO2e/m²",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-071",
+    "nombre": "DVH bajo emisivo (control solar)",
+    "categoria": "Acabados",
+    "sostenibilidad": 82,
+    "descripcion": "Doble vidrio hermético con capa low-e Saint-Gobain. Corta carga de A/A en oficinas GT.",
+    "especificaciones": [
+      "Low-e",
+      "Cámara 12 mm",
+      "SHGC bajo"
+    ],
+    "unidad": "m²",
+    "precioReferencia": 85.0,
+    "moneda": "USD",
+    "origen": "internacional",
+    "certificaciones": [
+      "NFRC",
+      "EPD vidrio"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-internacional-01"
+    ],
+    "huellaCarbono": "28 kg CO2e/m²",
+    "reciclable": true,
+    "destacadoSostenible": true
+  },
+  {
+    "id": "mat-072",
+    "nombre": "Geotextil no tejido 150 g/m²",
+    "categoria": "Mampostería",
+    "sostenibilidad": 50,
+    "descripcion": "INE materiales varios. Drenaje y separación de suelos.",
+    "especificaciones": [
+      "150 g/m²",
+      "No tejido",
+      "PP"
+    ],
+    "unidad": "m²",
+    "precioReferencia": 8.5,
+    "moneda": "GTQ",
+    "origen": "nacional",
+    "certificaciones": [
+      "ASTM D5261"
+    ],
+    "imagen": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80",
+    "proveedorIds": [
+      "prov-nacional-07"
+    ],
+    "huellaCarbono": "0.9 kg CO2e/m²",
+    "reciclable": true,
+    "destacadoSostenible": true
+  }
+]

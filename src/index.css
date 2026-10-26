@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import "@fontsource-variable/figtree";
+@import "@fontsource-variable/fraunces/wght-italic.css";
+@import "@fontsource-variable/syne";
+
+@theme {
+  --color-linen: #efe8d8;
+  --color-bone: #fbf7ee;
+  --color-ink: #1a1712;
+  --color-moss: #1e5c3a;
+  --color-moss-deep: #163d28;
+  --color-brick: #c24e1d;
+  --color-lime: #c5d45a;
+  --color-stone: #6a5a4a;
+  --color-mist: #d9d0be;
+  --font-display: "Syne Variable", sans-serif;
+  --font-serif: "Fraunces Variable", Georgia, serif;
+  --font-sans: "Figtree Variable", system-ui, sans-serif;
+}
+
+body {
+  background: var(--color-linen);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+@media print {
+  body { background: white; }
+  @page { margin: 14mm; }
+}
