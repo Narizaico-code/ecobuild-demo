@@ -1,6 +1,6 @@
 import type { MaterialCompleto } from "../types";
 import { money } from "../lib/format";
-import { kgCo2eDe, tieneSelloVerde } from "../lib/origen";
+import { huellasComparables, tieneSelloVerde } from "../lib/origen";
 
 function sobrecostoPct(a: MaterialCompleto, b: MaterialCompleto) {
   if (a.unidad !== b.unidad || a.moneda !== b.moneda) return null;
@@ -18,12 +18,8 @@ export function Veredicto({ a, b }: { a: MaterialCompleto; b: MaterialCompleto }
   const verde = a.sostenibilidad >= b.sostenibilidad ? a : b;
   const conv = verde.id === a.id ? b : a;
   const costo = sobrecostoPct(a, b);
-  const kgVerde = kgCo2eDe(verde.huellaCarbono);
-  const kgConv = kgCo2eDe(conv.huellaCarbono);
-  const reduccion =
-    kgVerde != null && kgConv != null && kgConv > 0
-      ? Math.round((1 - kgVerde / kgConv) * 100)
-      : null;
+  const h = huellasComparables(verde.huellaCarbono, conv.huellaCarbono);
+  const reduccion = h && h.b > 0 ? Math.round((1 - h.a / h.b) * 100) : null;
   const lambdaV = verde.detalle.desempeno.conductividadTermica;
   const lambdaC = conv.detalle.desempeno.conductividadTermica;
   const covV = verde.detalle.ambiental.cov;
@@ -63,9 +59,11 @@ export function Veredicto({ a, b }: { a: MaterialCompleto; b: MaterialCompleto }
       </p>
       <ul className="veredicto-buys">
         <li>
-          {reduccion != null && reduccion > 0
-            ? `≈ ${reduccion}% menos kg CO₂e declarados por unidad de masa`
-            : "Huella: no hay cifra comparable entre estos dos materiales"}
+          {h == null
+            ? "Huella: no comparable (unidades distintas o sin dato publicado)"
+            : reduccion != null && reduccion > 0
+              ? `≈ ${reduccion}% menos kg CO₂e por ${h.por} (declarado)`
+              : `Huella: no mejora por ${h.por} frente al otro material`}
         </li>
         <li>
           {lambdaV != null && lambdaC != null

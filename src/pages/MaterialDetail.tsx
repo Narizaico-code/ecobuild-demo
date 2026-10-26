@@ -10,7 +10,7 @@ import { useCompare } from "../context/CompareContext";
 import { NearbyMap } from "../components/NearbyMap";
 import { formatHuella, labelOrigen, labelSostenibilidad, money, pct } from "../lib/format";
 import { GT_CITIES, ciudadPorNombre, coordsDe, distanceLabel } from "../lib/geo";
-import { catalogPath, comparePath } from "../lib/paths";
+import { catalogPath, comparePath, isAppPath } from "../lib/paths";
 import { alternativas, rankearProveedores } from "../lib/supply";
 import type { Material } from "../types";
 
@@ -150,7 +150,10 @@ export function MaterialDetail() {
               </div>
               <div>
                 <dt>Huella</dt>
-                <dd>{formatHuella(material.huellaCarbono, material.unidad)}</dd>
+                <dd>
+                  {formatHuella(material.huellaCarbono, material.unidad)}{" "}
+                  <span className="tag tag-declarado" title="Cifra del catálogo de referencia, no verificada">Declarado</span>
+                </dd>
               </div>
               <div>
                 <dt>Reciclable</dt>
@@ -175,9 +178,15 @@ export function MaterialDetail() {
               <Link className="btn btn-ghost" to={`${catalogoHref}?eq=${material.id}`}>
                 Ver equivalentes sostenibles
               </Link>
-              <Link className="btn btn-ghost" to={catalogoHref}>
-                Volver al catálogo
-              </Link>
+              {isAppPath(pathname) ? (
+                <Link className="btn btn-ghost" to={`/app/cotizaciones?material=${material.id}#pedir`}>
+                  Pedir cotización
+                </Link>
+              ) : (
+                <Link className="btn btn-ghost" to={catalogoHref}>
+                  Volver al catálogo
+                </Link>
+              )}
             </div>
           </div>
         </article>

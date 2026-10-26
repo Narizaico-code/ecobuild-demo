@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
-import { useLocation, useSearchParams } from "react-router-dom";
+import { Link, useLocation, useSearchParams } from "react-router-dom";
+import { isAppPath } from "../lib/paths";
 import { categorias, proveedoresDeMaterial, searchText } from "../data";
 import {
   getMaterialCompleto as getMaterial,
@@ -60,7 +61,7 @@ function MaterialColumn({
 
 export function Compare() {
   const { leftId, rightId, setLeft, setRight, swap, clear } = useCompare();
-  const { hash } = useLocation();
+  const { hash, pathname } = useLocation();
   const [params, setParams] = useSearchParams();
   const q = params.get("q") ?? "";
   const presetLeft = params.get("left");
@@ -120,8 +121,8 @@ export function Compare() {
             Elige A y B, <span className="italic">lee la diferencia</span>
           </h1>
           <p className="lede compare-lede">
-            Da igual si son sostenibles o no. Verás precio, origen, ubicación y
-            sostenibilidad de cada uno. Abajo, el detalle criterio a criterio.
+            Antes de cotizar: precio, origen y sostenibilidad lado a lado. La huella
+            solo se compara si las dos están en la misma unidad; si no, dice «no comparable».
           </p>
         </div>
         <div className="toolbar-actions">
@@ -134,6 +135,14 @@ export function Compare() {
             <button className="btn btn-ghost no-print" type="button" onClick={() => window.print()}>
               Exportar comparativo
             </button>
+          ) : null}
+          {isAppPath(pathname) && (left || right) ? (
+            <Link
+              className="btn btn-ink no-print"
+              to={`/app/cotizaciones?${[left, right].filter(Boolean).map((m) => `material=${m!.id}`).join("&")}#pedir`}
+            >
+              Pedir cotización
+            </Link>
           ) : null}
         </div>
       </header>

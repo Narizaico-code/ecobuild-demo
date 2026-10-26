@@ -1,6 +1,7 @@
 import type { MaterialCompleto } from "../types";
 import { formatHuella, money } from "../lib/format";
 import { Veredicto } from "./Veredicto";
+import { huellasComparables } from "../lib/origen";
 import { RespaldoHistorico } from "./RespaldoHistorico";
 
 type Mejor = "a" | "b" | "empate" | "incomparable";
@@ -108,8 +109,11 @@ const FILAS: FilaDef[] = [
     eje: "Ambiental",
     label: "Huella de carbono",
     valor: (m) => formatHuella(m.huellaCarbono, m.unidad),
-    // Las huellas del dataset vienen por t, m³, pieza, saco… no son sumables
-    // entre sí, así que no se corona a ninguna.
+    // Vienen por t, m³, pieza, saco…: solo se corona si las dos están en la misma unidad (D9).
+    mejor: (a, b) => {
+      const h = huellasComparables(a.huellaCarbono, b.huellaCarbono);
+      return h ? cmpNum(h.a, h.b, false) : "incomparable";
+    },
   },
   {
     eje: "Ambiental",
@@ -210,8 +214,9 @@ export function TablaComparativa({
       {unidadDistinta ? (
         <p className="hint-inline aviso">
           Estos dos materiales se venden en unidades distintas ({a.unidad} y {b.unidad}
-          ): el precio y la huella se muestran pero no se declara ganador, porque
-          compararlos directamente daría un resultado falso.
+          ): el precio se muestra pero no se declara ganador, porque compararlo
+          directamente daría un resultado falso. La huella solo se compara cuando
+          las dos están expresadas por la misma unidad.
         </p>
       ) : null}
 
@@ -239,7 +244,12 @@ export function TablaComparativa({
                   key={f.label}
                   className={`diff-row ${va !== vb ? "is-diff" : ""}`}
                 >
-                  <span>{f.label}</span>
+                  <span>
+                    {f.label}
+                    {f.label === "Huella de carbono" && r === "incomparable" ? (
+                      <> <span className="tag tag-nocomp" title="Unidades distintas o sin cifra publicada">No comparable</span></>
+                    ) : null}
+                  </span>
                   <strong className={r === "a" ? "gana" : ""} data-lado={a.nombre}>
                     {va}
                     {r === "a" ? <i className="marca" aria-label="mejor">▲</i> : null}

@@ -15,7 +15,9 @@ import { Horizonte } from "./pages/Horizonte";
 import { Profile } from "./pages/Profile";
 import { Vision, VistaPrevia } from "./pages/Vision";
 import { Casa, MisObras, Proyecto } from "./pages/obra/Obras";
-import Cotizaciones from "./pages/casa/Cotizaciones";
+import { Cotizaciones } from "./pages/obra/Cotizaciones";
+import { Ordenes } from "./pages/obra/Ordenes";
+import { Presupuesto } from "./pages/obra/Presupuesto";
 import Facturas from "./pages/casa/Facturas";
 import Resumen from "./pages/casa/Resumen";
 import Carbono from "./pages/casa/Carbono";
@@ -74,7 +76,9 @@ export default function App() {
                     <Route path="/app/cotizaciones" element={<Cotizaciones />} />
                     <Route path="/app/proveedores" element={<Proveedores />} />
                     {/* Administrar */}
+                    <Route path="/app/ordenes" element={<Ordenes />} />
                     <Route path="/app/facturas" element={<Facturas />} />
+                    <Route path="/app/presupuesto" element={<Presupuesto />} />
                     {/* Resultados */}
                     <Route path="/app/resumen" element={<Resumen />} />
                     <Route path="/app/carbono" element={<Carbono />} />

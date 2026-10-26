@@ -7,7 +7,7 @@ export interface Miga { label: string; to?: string }
 
 const OBRAS: Miga = { label: "Mis obras", to: OBRAS_PATH };
 const PROYECTO: Miga = { label: "Residencial Demo", to: PROYECTO_PATH };
-const CASA: Miga = { label: "Casa modelo · Lote 5", to: CASA_PATH };
+const CASA: Miga = { label: "Lote 5", to: CASA_PATH };
 const enCasa = (label: string): Miga[] => [OBRAS, PROYECTO, CASA, { label }];
 
 const FIJAS: Record<string, Miga[]> = {

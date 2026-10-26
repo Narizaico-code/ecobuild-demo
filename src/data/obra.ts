@@ -43,43 +43,44 @@ export interface MatDemo {
   factor?: keyof typeof FACTORES;
   kgPorUnidad?: number;
   conv?: { pregunta: string; unidadConv: string; ref?: number; refNota?: string };
+  catalogo?: string; // ficha más parecida del catálogo (para ir de la factura al material y al comparador)
 }
 const LB = 0.45359237;
 const TABLA = "tabla de masa nominal por metro, por confirmar con la ficha del fabricante";
 const DENS = "densidad aparente general, por confirmar";
 export const MATERIALES: MatDemo[] = [
-  { id: "cemento", nombre: "Cemento gris 42.5 kg", unidad: "saco", kgPorUnidad: 42.5 },
-  { id: "arena", nombre: "Arena de río", unidad: "m³", factor: "agregados",
+  { id: "cemento", catalogo: "mat-001", nombre: "Cemento gris 42.5 kg", unidad: "saco", kgPorUnidad: 42.5 },
+  { id: "arena", catalogo: "mat-012", nombre: "Arena de río", unidad: "m³", factor: "agregados",
     conv: { pregunta: "¿Cuánto pesa un m³ de arena?", unidadConv: "kg/m³", ref: 1600, refNota: DENS } },
-  { id: "piedrin", nombre: "Piedrín", unidad: "m³", factor: "agregados",
+  { id: "piedrin", catalogo: "mat-014", nombre: "Piedrín", unidad: "m³", factor: "agregados",
     conv: { pregunta: "¿Cuánto pesa un m³ de piedrín?", unidadConv: "kg/m³", ref: 1500, refNota: DENS } },
   { id: "selecto", nombre: "Material selecto", unidad: "m³", factor: "agregados",
     conv: { pregunta: "¿Cuánto pesa un m³ de material selecto?", unidadConv: "kg/m³" } },
   { id: "var14", nombre: 'Varilla corrugada 1/4" × 6 m', unidad: "varilla", factor: "metales",
     conv: { pregunta: 'Se compra por varilla y la huella es por kg: ¿cuánto pesa una varilla de 1/4" × 6 m?', unidadConv: "kg/varilla", ref: 1.49, refNota: TABLA } },
-  { id: "var38", nombre: 'Varilla corrugada 3/8" × 6 m', unidad: "varilla", factor: "metales",
+  { id: "var38", catalogo: "mat-016", nombre: 'Varilla corrugada 3/8" × 6 m', unidad: "varilla", factor: "metales",
     conv: { pregunta: 'Se compra por varilla y la huella es por kg: ¿cuánto pesa una varilla de 3/8" × 6 m?', unidadConv: "kg/varilla", ref: 3.36, refNota: TABLA } },
   { id: "var12", nombre: 'Varilla corrugada 1/2" × 6 m', unidad: "varilla", factor: "metales",
     conv: { pregunta: 'Se compra por varilla y la huella es por kg: ¿cuánto pesa una varilla de 1/2" × 6 m?', unidadConv: "kg/varilla", ref: 5.97, refNota: TABLA } },
-  { id: "alambre", nombre: "Alambre de amarre", unidad: "lb", factor: "metales", kgPorUnidad: LB },
+  { id: "alambre", catalogo: "mat-018", nombre: "Alambre de amarre", unidad: "lb", factor: "metales", kgPorUnidad: LB },
   { id: "clavo", nombre: 'Clavo 3"', unidad: "lb", factor: "metales", kgPorUnidad: LB },
-  { id: "block", nombre: "Block 14×19×39 cm", unidad: "unidad", factor: "concreto",
+  { id: "block", catalogo: "mat-023", nombre: "Block 14×19×39 cm", unidad: "unidad", factor: "concreto",
     conv: { pregunta: "¿Cuánto pesa un block 14×19×39? (lo debe decir el fabricante)", unidadConv: "kg/unidad" } },
   { id: "vigueta", nombre: "Vigueta autoportante", unidad: "unidad", factor: "concreto",
     conv: { pregunta: "¿Cuánto pesa una vigueta? (depende del largo)", unidadConv: "kg/unidad" } },
   { id: "bovedilla", nombre: "Bovedilla 10×20×52", unidad: "unidad", factor: "concreto",
     conv: { pregunta: "¿Cuánto pesa una bovedilla?", unidadConv: "kg/unidad" } },
-  { id: "concreto", nombre: "Concreto premezclado 3000 psi", unidad: "m³", factor: "concreto",
+  { id: "concreto", catalogo: "mat-008", nombre: "Concreto premezclado 3000 psi", unidad: "m³", factor: "concreto",
     conv: { pregunta: "¿Cuánto pesa un m³ de concreto?", unidadConv: "kg/m³", ref: 2400, refNota: "densidad típica de concreto normal, por confirmar con la concretera" } },
   { id: "bombeo", nombre: "Bombeo de concreto", unidad: "m³" },
   { id: "flete", nombre: "Flete", unidad: "viaje" },
-  { id: "cal", nombre: "Cal hidratada", unidad: "bolsa" },
-  { id: "repello", nombre: "Repello base", unidad: "saco" },
-  { id: "tablaroca", nombre: 'Tablaroca 1/2" 4\'×8\'', unidad: "plancha", factor: "yeso",
+  { id: "cal", catalogo: "mat-006", nombre: "Cal hidratada", unidad: "bolsa" },
+  { id: "repello", catalogo: "mat-047", nombre: "Repello base", unidad: "saco" },
+  { id: "tablaroca", catalogo: "mat-055", nombre: 'Tablaroca 1/2" 4\'×8\'', unidad: "plancha", factor: "yeso",
     conv: { pregunta: "¿Cuánto pesa una plancha de tablaroca?", unidadConv: "kg/plancha" } },
-  { id: "piso", nombre: "Piso cerámico 61×61", unidad: "m²" },
+  { id: "piso", catalogo: "mat-042", nombre: "Piso cerámico 61×61", unidad: "m²" },
   { id: "tubo", nombre: 'Tubo PVC 4" desagüe 6 m', unidad: "tubo" },
-  { id: "cable", nombre: "Cable THHN 12", unidad: "m" },
+  { id: "cable", catalogo: "mat-067", nombre: "Cable THHN 12", unidad: "m" },
 ];
 export const MAT = Object.fromEntries(MATERIALES.map((m) => [m.id, m])) as Record<string, MatDemo>;
 
