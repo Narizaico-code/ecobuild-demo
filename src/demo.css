@@ -199,3 +199,37 @@ details.fold > summary { cursor: pointer; }
   .sidebar-link { padding: 0.42rem 0.9rem; }
   .app-sidebar-foot { padding-top: 0.5rem; }
 }
+
+/* Entrada de cada vista. Sin transform al terminar: no crea un contenedor para lo fijo. */
+.page-enter { animation: page-in 0.4s ease-out; }
+/* Solo desplazamiento, sin opacidad: si el navegador frena la animación, la pantalla nunca queda desvanecida. */
+@keyframes page-in { from { transform: translateY(12px); } }
+@media (prefers-reduced-motion: reduce) { .page-enter { animation: none; } }
+
+/* Shell «nt»: subetiquetas de la obra, contador y buscador en la barra superior */
+.nt-app .nt-sb-item.nt-sb-sub { padding-left: 1.9rem; font-size: 0.86em; }
+.nt-app .nt-sb-item.nt-sb-sub .nt-sb-ico { opacity: 0.75; }
+.nt-sb-badge { margin-left: auto; min-width: 1.2rem; padding: 0 0.35rem; border-radius: 999px; background: var(--cinder); color: #fff; font-size: 0.66rem; line-height: 1.2rem; text-align: center; }
+.nt-search { display: flex; align-items: center; gap: 0.45rem; padding: 0.3rem 0.7rem; border: 1px solid var(--line); border-radius: 8px; background: var(--bone); color: var(--stone); }
+.nt-search input { border: 0; background: transparent; outline: 0; width: 11rem; font-size: 0.86rem; color: var(--ink); }
+.nt-app .nt-top-actions { display: flex; align-items: center; gap: 0.6rem; }
+
+/* Con el tema nuevo: tarjetas redondeadas y con relieve, como las del HTML de referencia */
+.nt-app .panel { border-color: var(--nt-border); border-radius: var(--nt-radius-lg); background: var(--nt-surface); box-shadow: var(--nt-shadow-card); overflow: hidden; }
+.nt-app .panel-head { border-color: var(--nt-border); }
+.nt-app .aviso, .nt-app .preview-banner { border-radius: var(--nt-radius-lg); }
+.nt-app .siguiente { border-radius: var(--nt-radius-lg); background: var(--nt-sidebar); box-shadow: var(--nt-shadow-card); }
+.nt-app .cierre { border-radius: var(--nt-radius-lg); overflow: hidden; box-shadow: var(--nt-shadow-card); }
+.nt-app .cierre-item:first-child, .nt-app .cierre-item:nth-child(2) { background: var(--nt-sidebar); }
+.nt-app .lote { border-radius: var(--nt-radius); }
+.nt-app .tag { border-radius: 999px; }
+.nt-app .barra { border-radius: 999px; }
+.nt-app .excel { border-radius: 0; }
+.nt-app .obra-stepper-list { border-radius: var(--nt-radius-lg); overflow: hidden; }
+
+/* Arte por etapas del inicio: los círculos (cabezas, llantas) aparecen con la etapa */
+.nt-app .home-hero-art .arte-etapa { animation: page-in 0.5s ease-out; }
+.nt-app .home-hero-art circle { opacity: 0; animation: arte-aparece 0.5s ease-out 0.5s forwards; }
+@keyframes arte-aparece { to { opacity: 1; } }
+.nt-app .home-hero-art .arte-etapa path { animation-duration: 1s; }
+.nt-app .home-hero-art .arte-etapa .art-hook path, .nt-app .home-hero-art .arte-etapa path.art-hook { animation-duration: 0.9s, 4s; }

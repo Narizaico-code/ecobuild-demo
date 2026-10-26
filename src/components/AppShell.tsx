@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useLayoutEffect, useState, type ReactNode } from "react";
 import { Navigate, Outlet, useLocation } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { useCompare } from "../context/CompareContext";
@@ -31,6 +31,44 @@ function AuthSkeleton() {
   );
 }
 
+const OCULTA_KEY = "ecobuild-nt-sidebar-oculta";
+
+/** Shell del EcoBuild anterior en su versión nueva: sidebar verde que se puede ocultar. */
+function NtFrame({ hasTray, extra }: { hasTray: boolean; extra?: ReactNode }) {
+  const [oculta, setOculta] = useState(() => {
+    try { return localStorage.getItem(OCULTA_KEY) === "1"; } catch { return false; }
+  });
+  const [movil, setMovil] = useState(false);
+  const { pathname } = useLocation();
+  useEffect(() => setMovil(false), [pathname]);
+  // Antes de pintar: si la clase llega después, el panel se anima desde margen 0 y queda tapado un instante.
+  useLayoutEffect(() => {
+    document.body.classList.add("nt-app");
+    document.body.classList.toggle("nt-sb-hidden", oculta);
+    try { localStorage.setItem(OCULTA_KEY, oculta ? "1" : "0"); } catch { /* sin almacenamiento */ }
+    return () => document.body.classList.remove("nt-app", "nt-sb-hidden");
+  }, [oculta]);
+  return (
+    <div className={`app-shell nt-shell ${oculta ? "is-collapsed" : ""} ${hasTray ? "has-tray" : ""}`}>
+      <a className="skip-link" href="#contenido">Saltar al contenido</a>
+      {movil && <button className="nt-backdrop" type="button" aria-label="Cerrar menú" onClick={() => setMovil(false)} />}
+      <AppSidebar open={movil} onCollapse={() => (window.innerWidth < 900 ? setMovil(false) : setOculta(true))} onNavigate={() => setMovil(false)} />
+      <div className="nt-panel">
+        <AppTopbar collapsed={oculta} onOpenMenu={() => (window.innerWidth < 900 ? setMovil(true) : setOculta(false))} />
+        <main id="contenido" className="app-main nt-main" tabIndex={-1}>
+          <div className="nt-page">
+            <PageEnter>
+              <Outlet />
+            </PageEnter>
+          </div>
+        </main>
+        <CompareTray />
+      </div>
+      {extra}
+    </div>
+  );
+}
+
 function ProductFrame({
   variant,
   extra,
@@ -42,32 +80,7 @@ function ProductFrame({
   const location = useLocation();
   const hasTray =
     Boolean(leftId || rightId) && isCompareTrayPath(location.pathname);
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    setMenuOpen(false);
-  }, [location.pathname]);
-
-  if (variant === "app") {
-    return (
-      <div className={`app-shell app-shell--sidebar ${hasTray ? "has-tray" : ""}`}>
-        <a className="skip-link" href="#contenido">
-          Saltar al contenido
-        </a>
-        <AppSidebar open={menuOpen} onClose={() => setMenuOpen(false)} />
-        <div className="app-panel">
-          <AppTopbar onOpenMenu={() => setMenuOpen(true)} />
-          <main id="contenido" className="app-main" tabIndex={-1}>
-            <PageEnter>
-              <Outlet />
-            </PageEnter>
-          </main>
-          <CompareTray />
-        </div>
-        {extra}
-      </div>
-    );
-  }
+  if (variant === "app") return <NtFrame hasTray={hasTray} extra={extra} />;
 
   return (
     <div className={`app-shell ${hasTray ? "has-tray" : ""}`}>

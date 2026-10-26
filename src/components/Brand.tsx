@@ -1,6 +1,6 @@
 export function Logo({ variant = "dark" }: { variant?: "dark" | "light" }) {
-  const fill = variant === "light" ? "#F7F1E4" : "#1A1712";
-  const accent = "#C5D45A";
+  const fill = variant === "light" ? "var(--c-claro, #F7F1E4)" : "var(--c-tinta, #1A1712)";
+  const accent = "var(--c-acento, #C5D45A)";
   return (
     <span className="logo">
       <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden>

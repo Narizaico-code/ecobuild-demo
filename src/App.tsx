@@ -15,6 +15,10 @@ import { Horizonte } from "./pages/Horizonte";
 import { Profile } from "./pages/Profile";
 import { Vision, VistaPrevia } from "./pages/Vision";
 import { Casa, MisObras, Proyecto } from "./pages/obra/Obras";
+import { Inicio } from "./pages/obra/Inicio";
+import { Alternativas, Necesidades } from "./pages/obra/Necesidades";
+import { ObraPlan } from "./pages/ObraPlan";
+import { Expediente } from "./pages/Expediente";
 import { Cotizaciones } from "./pages/obra/Cotizaciones";
 import { Ordenes } from "./pages/obra/Ordenes";
 import { Presupuesto } from "./pages/obra/Presupuesto";
@@ -22,7 +26,7 @@ import { Facturas } from "./pages/obra/Facturas";
 import { Resumen } from "./pages/obra/Resumen";
 import { Carbono } from "./pages/obra/Carbono";
 import { Reporte } from "./pages/obra/Reporte";
-import { CASA_PATH, OBRAS_PATH, PROYECTO_PATH } from "./lib/rutas";
+import { CASA_PATH, INICIO_PATH, OBRAS_PATH, PROYECTO_PATH } from "./lib/rutas";
 
 const Landing = lazy(() => import("./pages/Landing").then((m) => ({ default: m.Landing })));
 
@@ -64,11 +68,16 @@ export default function App() {
                 </Route>
                 <Route element={<RequireAuth />}>
                   <Route element={<AppShell />}>
-                    <Route path="/app" element={<Navigate to={OBRAS_PATH} replace />} />
+                    <Route path="/app" element={<Navigate to={INICIO_PATH} replace />} />
+                    <Route path={INICIO_PATH} element={<Inicio />} />
                     {/* Iniciar */}
                     <Route path={OBRAS_PATH} element={<MisObras />} />
                     <Route path={PROYECTO_PATH} element={<Proyecto />} />
                     <Route path={CASA_PATH} element={<Casa />} />
+                    <Route path={`${CASA_PATH}/necesidades`} element={<Necesidades />} />
+                    <Route path={`${CASA_PATH}/alternativas`} element={<Alternativas />} />
+                    <Route path={`${OBRAS_PATH}/:id`} element={<ObraPlan />} />
+                    <Route path={`${OBRAS_PATH}/:id/expediente`} element={<Expediente />} />
                     <Route path="/app/materiales" element={<Catalog />} />
                     <Route path="/app/materiales/:id" element={<MaterialDetail />} />
                     <Route path="/app/comparar" element={<Compare />} />
@@ -93,7 +102,6 @@ export default function App() {
                     <Route path="/app/proveedor" element={<Navigate to="/app/vision/proveedor" replace />} />
                     <Route path="/app/proveedor/certificarse" element={<Navigate to="/app/vision/certificarse" replace />} />
                     <Route path="/app/horizonte" element={<Navigate to="/app/vision/horizonte" replace />} />
-                    <Route path="/app/obras/:id/expediente" element={<Navigate to="/app/vision/expediente" replace />} />
                     <Route path="/app/*" element={<Navigate to={CASA_PATH} replace />} />
                   </Route>
                 </Route>
