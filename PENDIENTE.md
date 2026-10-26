@@ -1,5 +1,13 @@
 # Pendiente (demo de la conferencia, martes 2026-10-27)
 
+## Actualización 2026-10-26, tarde (§1 de `ecobuild-backend/docs/proceso-completo.md`, decisión #51)
+- Órdenes: seguimiento en 6 pasos (aceptada, en camino, recibida con cantidades y foto o parcial, facturada, pagada con comprobante, confirmada o en disputa). Letrero «EcoBuild no mueve dinero».
+- «Ver como proveedor» (`/app/ordenes/proveedor`): aceptar, en camino (guía y placa), subir factura FEL (entra en Facturas y en el presupuesto ligada a la orden y al capítulo), confirmar el pago.
+- Inicio: «Lo que está esperando» (En camino, Llegan hoy, Por pagar) con enlace a Órdenes filtrado.
+- Comparador en el teléfono: veredicto en una frase arriba, columnas apiladas, «Ver todos los datos», no comparable con su porqué, un solo botón.
+- Papeles de la obra y Bitácora · entrega · postventa (rótulo «Vista previa · por validar con constructores»). Todo simulado.
+- No se hizo: la línea «pagado» en la leyenda del presupuesto (§1.1, opcional). En la cotización, recibir 12 de 14 m³ no cambia lo que el proveedor factura (14): la diferencia se ve en el seguimiento, no se cruza sola.
+
 ## Actualización 2026-10-26 (diseño del HTML de referencia)
 - Base visual: el CSS del HTML `EcoBuild-demo(frontend un poco retocado creo).html` (tema «Eucalipto»), en `src/base-anterior.css` (compilado: no se edita a mano).
 - Nuevo: **Inicio** (`/app/inicio`, adonde lleva el login) con «¿Qué quieres hacer hoy?» y el dibujo por etapas; login a pantalla completa; sidebar que se oculta (« y ☰) con las vistas de la casa como subetiquetas de «Mis obras»; Mis obras en tarjetas con «Nueva obra» (abre la vista de 8 pasos del EcoBuild anterior); Necesidades y Alternativas de la casa.
