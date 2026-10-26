@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import { ARCHIVO_NUEVO, LINEAS_A_EMPAREJAR, PREVIAS, type Linea } from "../data/obra";
+import { lineasFel, type Seg } from "./seguimiento";
 
 export interface Decision { mat: string | null; cap: number | null; ok: boolean }
 
@@ -11,6 +12,7 @@ interface Estado {
   aceptadas: Record<string, string>; // cotización -> proveedor elegido (de ahí sale la orden)
   solicitudes: Solicitud[]; // pedidos de cotización enviados en la demo
   reciclada: boolean; // la persona decidió pedir varilla con contenido reciclado
+  seg: Record<string, Seg>; // seguimiento del pedido, por cotización aceptada (simulado)
 }
 
 export interface Solicitud { id: string; mats: string[]; provs: string[] }
@@ -23,6 +25,7 @@ const inicial = (): Estado => ({
   aceptadas: {},
   solicitudes: [],
   reciclada: false,
+  seg: {},
 });
 
 const KEY = "ecobuild-demo-v2";
@@ -45,6 +48,7 @@ interface Ctx extends Estado {
   aceptar: (cot: string, prov: string | null) => void;
   solicitar: (mats: string[], provs: string[]) => void;
   setReciclada: (v: boolean) => void;
+  marcar: (cot: string, patch: Partial<Seg>) => void;
   reiniciar: () => void;
 }
 const C = createContext<Ctx>(null as never);
@@ -64,7 +68,7 @@ export function DemoProvider({ children }: { children: ReactNode }) {
     }));
     return {
       ...e,
-      lineas: [...PREVIAS, ...nuevas],
+      lineas: [...PREVIAS, ...nuevas, ...lineasFel(e.aceptadas, e.seg, [...PREVIAS, ...nuevas])],
       pendientes: LINEAS_A_EMPAREJAR.filter((l) => !e.decisiones[l.id].ok).length,
       ordenar: () => setE((s) => ({ ...s, ordenado: true })),
       decidir: (id, d) => setE((s) => ({ ...s, decisiones: { ...s.decisiones, [id]: { ...s.decisiones[id], ...d } } })),
@@ -86,11 +90,14 @@ export function DemoProvider({ children }: { children: ReactNode }) {
         setE((s) => {
           const aceptadas = { ...s.aceptadas };
           if (prov) aceptadas[cot] = prov; else delete aceptadas[cot];
-          return { ...s, aceptadas };
+          const seg = { ...s.seg };
+          delete seg[cot]; // otro proveedor u orden deshecha: el seguimiento empieza de cero
+          return { ...s, aceptadas, seg };
         }),
       solicitar: (mats, provs) =>
         setE((s) => ({ ...s, solicitudes: [...s.solicitudes, { id: `SC-${String(s.solicitudes.length + 1).padStart(3, "0")}`, mats, provs }] })),
       setReciclada: (v) => setE((s) => ({ ...s, reciclada: v })),
+      marcar: (cot, patch) => setE((s) => ({ ...s, seg: { ...s.seg, [cot]: { ...s.seg[cot], ...patch } } })),
       reiniciar: () => setE(inicial()),
     };
   }, [e]);

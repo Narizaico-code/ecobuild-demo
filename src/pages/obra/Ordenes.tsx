@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
+import { Seguimiento } from "../../components/obra/Seguimiento";
+import { FILTROS, type Filtro } from "../../lib/seguimiento";
 import { ARCHIVO_NUEVO, CAPITULOS, MAT } from "../../data/obra";
 import { Q } from "../../lib/calc";
 import { useDemo } from "../../lib/store";
@@ -32,6 +34,7 @@ function OrdenPanel({ o }: { o: Orden }) {
           sub={o.ahorro < 0 ? "se eligió por pago o entrega, no por precio" : undefined}
         />
       </Metricas>
+      <Seguimiento o={o} />
       {sinConfirmar.length > 0 && (
         <Link className="aviso aviso-brick" to="/app/facturas" style={{ margin: "0 1.4rem 1.2rem" }}>
           {ordenado
@@ -39,6 +42,8 @@ function OrdenPanel({ o }: { o: Orden }) {
             : <>Llegó un Excel con facturas de {o.proveedor}. Ordénelo para ver qué parte de esta orden ya se facturó. →</>}
         </Link>
       )}
+      <details className="fold panel-body">
+      <summary>Renglones de la orden ({o.cot.renglones.length})</summary>
       <div className="table-wrap">
         <table className="tabla" style={{ minWidth: 640 }}>
           <thead>
@@ -62,25 +67,36 @@ function OrdenPanel({ o }: { o: Orden }) {
           </tbody>
         </table>
       </div>
+      </details>
     </Panel>
   );
 }
 
 export function Ordenes() {
-  const { aceptadas, lineas } = useDemo();
-  const ordenes = ordenesDe(aceptadas, lineas);
+  const { aceptadas, lineas, seg } = useDemo();
+  const [params] = useSearchParams();
+  const filtro = params.get("estado") as Filtro | null;
+  const todas = ordenesDe(aceptadas, lineas);
+  const f = filtro && FILTROS[filtro];
+  const ordenes = f ? todas.filter((o) => f.es(seg[o.cot.id], o.porFacturar === 0)) : todas;
   return (
     <div>
       <PageHead
         eyebrow="Administrar · Casa modelo lote 5"
         titulo="Órdenes de compra"
         italic="lo aceptado"
-        proposito="Cada cotización aceptada es una orden. Aquí se ve cuánto ya llegó facturado y a qué capítulo del presupuesto se carga."
+        proposito="Cada cotización aceptada es una orden. Aquí se ve dónde está el pedido, qué llegó, qué se facturó y qué se pagó."
       >
         {ordenes.length > 0 && <Link className="btn btn-ink" to="/app/presupuesto">Ver el efecto en el presupuesto</Link>}
       </PageHead>
       <ObraStepper />
-      {ordenes.length === 0 ? (
+      <p className="letrero-fijo">EcoBuild no mueve dinero. Registra el pago y le pide al proveedor que confirme.</p>
+      {f && (
+        <Aviso tono="moss">
+          Mostrando: <b>{f.label}</b> ({ordenes.length} de {todas.length}). <Link className="link-cruzado" to="/app/ordenes">Ver todas</Link>
+        </Aviso>
+      )}
+      {todas.length === 0 ? (
         <Panel eyebrow="Todavía no hay órdenes" titulo="Las órdenes salen de una cotización aceptada">
           <div className="panel-body">
             <p className="dash-sub" style={{ marginTop: 0 }}>

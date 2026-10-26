@@ -21,6 +21,7 @@ import { ObraPlan } from "./pages/ObraPlan";
 import { Expediente } from "./pages/Expediente";
 import { Cotizaciones } from "./pages/obra/Cotizaciones";
 import { Ordenes } from "./pages/obra/Ordenes";
+import { BandejaProveedor } from "./pages/obra/BandejaProveedor";
 import { Presupuesto } from "./pages/obra/Presupuesto";
 import { Facturas } from "./pages/obra/Facturas";
 import { Resumen } from "./pages/obra/Resumen";
@@ -86,6 +87,7 @@ export default function App() {
                     <Route path="/app/proveedores" element={<Proveedores />} />
                     {/* Administrar */}
                     <Route path="/app/ordenes" element={<Ordenes />} />
+                    <Route path="/app/ordenes/proveedor" element={<BandejaProveedor />} />
                     <Route path="/app/facturas" element={<Facturas />} />
                     <Route path="/app/presupuesto" element={<Presupuesto />} />
                     {/* Resultados */}

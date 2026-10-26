@@ -213,7 +213,8 @@ function Ordenado() {
 }
 
 export function Facturas() {
-  const { ordenado, ordenar } = useDemo();
+  const { ordenado, ordenar, lineas } = useDemo();
+  const fel = lineas.filter((l) => l.id.startsWith("fel-"));
   const [animando, setAnimando] = useState(false);
   return (
     <div>
@@ -230,6 +231,24 @@ export function Facturas() {
         )}
       </PageHead>
       <ObraStepper />
+      {fel.length > 0 && (
+        <Panel eyebrow="Llegaron por FEL, sin emparejar a mano" titulo="Facturas subidas por el proveedor a su orden">
+          <table className="tabla">
+            <tbody>
+              {fel.map((l) => (
+                <tr key={l.id}>
+                  <td>{l.factura} · {l.emisor}</td>
+                  <td>{l.desc}</td>
+                  <td className="num">{l.cant} {l.unidad}</td>
+                  <td className="num">{Q(l.sub)}</td>
+                  <td><Link className="link-cruzado" to="/app/ordenes">Ver la orden</Link></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <p className="nota panel-body">La factura la certifica la SAT. EcoBuild la guarda y la cruza con el pedido y lo recibido.</p>
+        </Panel>
+      )}
       {ordenado ? <Ordenado /> : animando ? <Ordenando onFin={ordenar} /> : <ExcelCrudo onOrdenar={() => setAnimando(true)} />}
     </div>
   );

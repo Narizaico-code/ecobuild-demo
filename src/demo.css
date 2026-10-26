@@ -233,3 +233,26 @@ details.fold > summary { cursor: pointer; }
 @keyframes arte-aparece { to { opacity: 1; } }
 .nt-app .home-hero-art .arte-etapa path { animation-duration: 1s; }
 .nt-app .home-hero-art .arte-etapa .art-hook path, .nt-app .home-hero-art .arte-etapa path.art-hook { animation-duration: 0.9s, 4s; }
+
+/* Seguimiento del pedido: 6 pasos (horizontal en computador, vertical en teléfono) */
+.pedido-pasos { list-style: none; display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.4rem; }
+.pedido-pasos li { display: flex; gap: 0.5rem; padding: 0.6rem; border-radius: var(--nt-radius, 6px); background: var(--nt-surface-2, var(--linen)); opacity: 0.6; }
+.pedido-pasos li.is-done { opacity: 1; }
+.pedido-pasos li.is-now { opacity: 1; box-shadow: inset 0 0 0 1.5px var(--olive); }
+.pedido-pasos strong { display: block; font-size: 0.82rem; }
+.pedido-pasos small { display: block; font-size: 0.72rem; color: var(--stone); line-height: 1.35; margin-top: 0.15rem; }
+.pedido-n { flex: none; display: grid; place-items: center; width: 1.4rem; height: 1.4rem; border-radius: 50%; background: var(--mist); font-size: 0.7rem; font-weight: 700; }
+.pedido-pasos li.is-done .pedido-n { background: var(--olive); color: #fff; }
+.pedido-pasos.is-disputa li:last-child { opacity: 1; background: rgba(194, 78, 29, 0.12); box-shadow: inset 0 0 0 1.5px var(--cinder); }
+.pedido-pasos.is-disputa li:last-child .pedido-n { background: var(--cinder); color: #fff; }
+@media (max-width: 900px) { .pedido-pasos { grid-template-columns: 1fr; } }
+.hoja { margin-top: 0.9rem; padding: 1rem; border: 1px solid var(--line); border-radius: var(--nt-radius-lg, 8px); background: var(--bone); }
+.hoja-foto { margin-top: 0.7rem; max-width: 220px; border-radius: 6px; }
+.letrero-fijo { position: sticky; top: 3.4rem; z-index: 5; margin-bottom: 1rem; padding: 0.55rem 0.9rem; border-radius: 999px; background: var(--nt-sidebar, var(--ink)); color: var(--c-claro, #fff); font-size: 0.8rem; text-align: center; }
+.bandeja-paso { display: grid; gap: 0.6rem; }
+.esperando { margin-bottom: 1.2rem; }
+.esperando-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; }
+.esperando-item { display: flex; align-items: baseline; gap: 0.5rem; padding: 0.7rem 0.9rem; border-radius: var(--nt-radius, 6px); background: var(--nt-surface-2, var(--linen)); }
+.esperando-item b { font-size: 1.5rem; font-family: var(--font-display); }
+.esperando-item.is-on { box-shadow: inset 0 0 0 1.5px var(--olive); }
+.esperando-item:hover { background: var(--nt-hover, var(--mist)); }

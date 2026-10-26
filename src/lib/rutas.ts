@@ -24,6 +24,7 @@ const FIJAS: Record<string, Miga[]> = {
   "/app/proveedores": [{ label: "Proveedores" }],
   "/app/cotizaciones": enCasa("Cotizaciones"),
   "/app/ordenes": enCasa("Órdenes de compra"),
+  "/app/ordenes/proveedor": [...enCasa("Órdenes de compra").slice(0, 3), { label: "Órdenes", to: "/app/ordenes" }, { label: "Vista del proveedor" }],
   "/app/facturas": enCasa("Facturas"),
   "/app/presupuesto": enCasa("Presupuesto"),
   "/app/resumen": enCasa("Resumen"),

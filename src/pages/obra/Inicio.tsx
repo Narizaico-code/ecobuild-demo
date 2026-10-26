@@ -11,6 +11,7 @@ import { useAuth } from "../../context/AuthContext";
 import { useEcoStore } from "../../context/EcoStore";
 import { Icon, type IconName } from "../../components/Icons";
 import { HeroArte } from "../../components/obra/HeroArte";
+import { FILTROS, type Filtro } from "../../lib/seguimiento";
 
 const saludo = () => {
   const h = new Date().getHours();
@@ -91,6 +92,24 @@ export function Inicio() {
           </div>
         </div>
         <HeroArte />
+      </section>
+
+      <section className="home-card esperando">
+        <div className="home-card-head">
+          <h3 className="home-card-title">Lo que está esperando</h3>
+          <Link className="home-link" to="/app/ordenes">Ver órdenes</Link>
+        </div>
+        <div className="esperando-grid">
+          {(Object.keys(FILTROS) as Filtro[]).map((k) => {
+            const n = ordenes.filter((o) => FILTROS[k].es(e.seg[o.cot.id], o.porFacturar === 0)).length;
+            return (
+              <Link key={k} className={`esperando-item ${n ? "is-on" : ""}`} to={`/app/ordenes?estado=${k}`}>
+                <b>{n}</b><span>{FILTROS[k].label}</span>
+              </Link>
+            );
+          })}
+        </div>
+        {!ordenes.length && <p className="home-muted">Sin pedidos todavía: <Link className="home-link" to="/app/cotizaciones">acepte una cotización</Link> y aquí se ve dónde va.</p>}
       </section>
 
       <div className="home-kpis">
