@@ -1,5 +1,10 @@
 # Pendiente (demo de la conferencia, martes 2026-10-27)
 
+## Corrección 2026-10-26: concreto duplicado
+- La cotización de concreto (C1) ahora dice «losa del 2.º nivel»: es el siguiente colado, no la F-0106 (losa del 1.er nivel, ya pagada).
+- Una orden solo se enlaza con facturas posteriores a ella (nunca con lo importado antes de la demo). Con G: Q 17,570 por facturar y Q 770 de ahorro. Con B: Q 18,340 por facturar y «Sobrecosto al comprar Q 770». Ya no se suman 28 m³ por error ni se toma la F-0106 vieja.
+- Las capturas de `plan-b/capturas` de Cotizaciones y Órdenes son de antes de este cambio (título sin «losa del 2.º nivel»).
+
 ## Actualización 2026-10-26, tarde (§1 de `ecobuild-backend/docs/proceso-completo.md`, decisión #51)
 - Órdenes: seguimiento en 6 pasos (aceptada, en camino, recibida con cantidades y foto o parcial, facturada, pagada con comprobante, confirmada o en disputa). Letrero «EcoBuild no mueve dinero».
 - «Ver como proveedor» (`/app/ordenes/proveedor`): aceptar, en camino (guía y placa), subir factura FEL (entra en Facturas y en el presupuesto ligada a la orden y al capítulo), confirmar el pago.

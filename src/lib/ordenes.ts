@@ -1,5 +1,9 @@
 import { COMPARABLES, PROVEEDORES_DEMO, type Cotizacion, type Oferta } from "../data/cotizaciones";
-import type { Linea } from "../data/obra";
+import { PREVIAS, type Linea } from "../data/obra";
+
+// Lo importado antes de la demo es de compras anteriores: nunca se enlaza con una orden nueva.
+const ANTERIORES = new Set(PREVIAS.map((l) => l.id));
+export const esDeOrden = (l: Linea) => !ANTERIORES.has(l.id);
 
 export const nombreProveedor = (id: string) => PROVEEDORES_DEMO.find((p) => p.id === id)?.nombre ?? id;
 
@@ -29,7 +33,7 @@ export function ordenesDe(aceptadas: Record<string, string>, lineas: Linea[]): O
     const porCap: Record<number, number> = {};
     for (const r of c.renglones) porCap[r.cap] = (porCap[r.cap] ?? 0) + r.cant * r.pu[oferta.proveedor];
     const mats = new Set(c.renglones.map((r) => r.mat));
-    const facturas = lineas.filter((l) => l.emisor === proveedor && l.mat && mats.has(l.mat));
+    const facturas = lineas.filter((l) => esDeOrden(l) && l.emisor === proveedor && l.mat && mats.has(l.mat));
     const factCap = (cap: number) => facturas.filter((l) => l.cap === cap).reduce((s, l) => s + l.sub, 0);
     return {
       id: `OC-${String(i + 1).padStart(3, "0")}`,

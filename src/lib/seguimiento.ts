@@ -1,6 +1,6 @@
 import { COMPARABLES } from "../data/cotizaciones";
 import type { Linea } from "../data/obra";
-import { nombreProveedor } from "./ordenes";
+import { esDeOrden, nombreProveedor } from "./ordenes";
 
 // Seguimiento del pedido (simulado, todo en el navegador): proveedor acepta → en camino →
 // el encargado recibe → factura FEL → el encargado registra el pago → el proveedor confirma.
@@ -45,7 +45,7 @@ export function lineasFel(aceptadas: Record<string, string>, seg: Record<string,
     if (!prov || !fel) return [];
     const emisor = nombreProveedor(prov);
     return c.renglones.flatMap((r) => {
-      const ya = base.filter((l) => l.emisor === emisor && l.mat === r.mat).reduce((s, l) => s + l.cant, 0);
+      const ya = base.filter((l) => esDeOrden(l) && l.emisor === emisor && l.mat === r.mat).reduce((s, l) => s + l.cant, 0);
       const cant = Math.max(0, r.cant - ya);
       if (!cant) return [];
       const vu = r.pu[prov];

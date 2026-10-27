@@ -24,8 +24,8 @@ export const PROVEEDORES_DEMO = [
 
 export const C1 = {
   id: "C1",
-  titulo: "Concreto premezclado 3000 psi · 14 m³",
-  nota: "Comparación limpia: mismo producto, misma cantidad.",
+  titulo: "Concreto premezclado 3000 psi · 14 m³ · losa del 2.º nivel",
+  nota: "El siguiente colado (la losa del 1.er nivel ya se pagó con la F-0106). Comparación limpia: mismo producto, misma cantidad.",
   renglones: [
     { material: "Concreto 3000 psi", mat: "concreto", cap: 4, unidad: "m³", cant: 14, pu: { B: 1165, G: 1095 } },
     { material: "Bombeo", mat: "bombeo", cap: 4, unidad: "m³", cant: 14, pu: { B: 145, G: 160 } },

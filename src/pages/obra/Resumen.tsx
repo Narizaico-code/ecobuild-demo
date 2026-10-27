@@ -33,7 +33,7 @@ export function Resumen() {
 
       <section className="cierre">
         <div className="cierre-item">
-          <p className="eyebrow">Ahorro al comprar</p>
+          <p className="eyebrow">{ahorro < 0 && ordenes.length ? "Sobrecosto al comprar" : "Ahorro al comprar"}</p>
           {ordenes.length ? (
             <>
               <b className={ahorro >= 0 ? "" : "is-neg"}>{Q(Math.abs(ahorro))}</b>
