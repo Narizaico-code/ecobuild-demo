@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EcoBuild · plan B (capturas)</title>
+<style>
+  body { margin: 0; background: #111; color: #eee; font: 16px system-ui, sans-serif; display: grid; grid-template-rows: auto 1fr; height: 100vh; }
+  header { display: flex; gap: 12px; align-items: center; padding: 8px 14px; background: #1c2b22; }
+  header b { flex: 1; }
+  button { font: inherit; padding: 6px 14px; border: 0; border-radius: 6px; cursor: pointer; }
+  main { display: grid; place-items: center; overflow: hidden; }
+  img { max-width: 100%; max-height: 100%; }
+</style>
+</head>
+<body>
+<header><button id="a">←</button><b id="t"></b><button id="b">→</button></header>
+<main><img id="i" alt=""></main>
+<script>
+  const f = [
+    "01-landing", "02-acceso", "03-inicio", "04-mis-obras", "05-lotes", "06-casa-modelo", "07-necesidades", "08-alternativas",
+    "09-cotizaciones", "10-orden-aceptada", "11-vista-proveedor", "12-proveedor-factura-subida", "13-orden-en-camino-facturada",
+    "14-facturas-excel-sucio", "15-facturas-ordenadas", "16-facturas-confirmadas-altas", "17-facturas-todo-confirmado",
+    "18-presupuesto", "19-carbono-antes", "20-carbono-con-pesos", "21-carbono-reciclada-decidida", "22-resumen", "23-reporte",
+    "24-vision", "25-vision-expediente", "26-papeles", "27-bitacora-entrega", "28-comparador",
+  ];
+  let n = 0;
+  const ir = (d) => {
+    n = (n + d + f.length) % f.length;
+    document.getElementById("i").src = f[n] + ".png";
+    document.getElementById("t").textContent = (n + 1) + " / " + f.length + " · " + f[n].slice(3).replace(/-/g, " ");
+  };
+  document.getElementById("a").onclick = () => ir(-1);
+  document.getElementById("b").onclick = () => ir(1);
+  addEventListener("keydown", (e) => { if (["ArrowRight", " ", "PageDown"].includes(e.key)) ir(1); if (["ArrowLeft", "PageUp"].includes(e.key)) ir(-1); });
+  ir(0);
+</script>
+</body>
+</html>
